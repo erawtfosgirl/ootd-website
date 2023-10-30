@@ -1,5 +1,97 @@
+/* Colors */
+/* Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: OswaldRegular;
+  src: url(/assets/fonts/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: OswaldMedium;
+  src: url(/assets/fonts/Oswald-Medium.ttf);
+}
+.site-header .header-nav {
+  font-family: OswaldMedium;
+}
+.site-header .header-nav a {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.site-header .header-actions {
+  font-family: OswaldRegular;
+}
+.site-header .header-actions button {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.site-header {
+  padding: 10px 0;
+  background-color: yellowgreen;
+}
+.site-header .header-nav a {
+  position: relative;
+}
+.site-header .header-nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 0;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.site-header .header-nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 0;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.site-header .header-nav a:hover::before {
+  width: 100%;
+}
+.site-header .header-nav a:hover::after {
+  width: 100%;
+}
+.site-header .header-actions button {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.35s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=style.css.map */

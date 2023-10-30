@@ -19,12 +19,40 @@
         }
     }
 
-    .header-actions{
+    .header-actions {
         font-family: $oswaldregular;
-        button{
+        button {
             color: $white;
             font-size: 16px;
             text-transform: uppercase;
+        }
+    }
+}
+
+.slider-section {
+    font-family: $oswaldregular;
+    .slider-item {
+        .slider-content {
+          color: $white;
+          text-transform: uppercase;
+        }
+        .shop-btn {
+            a {
+               color: $white;
+               font-size: 17px;
+               text-transform: uppercase;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+        .orange{
+            a{
+                color: $orange;
+                &:hover{
+                    color: $white;
+                }
+            }
         }
     }
 }

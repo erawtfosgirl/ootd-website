@@ -47,6 +47,17 @@
         }
     }
 }
+
+.categories-section {
+    .category-item {
+       
+        h3 {
+            color: $white;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
 .search-section {
     input {
         font-family: $oswaldregular;

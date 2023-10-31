@@ -57,10 +57,13 @@ a {
   color: #000000;
 }
 
+.categories-section {
+  font-family: OswaldRegular;
+}
 .categories-section .category-item h3 {
   color: #ffffff;
   font-size: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .search-section input {
@@ -191,12 +194,26 @@ a {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  z-index: 8;
+  transition: 0.2s ease-in-out;
 }
-.categories-section .categories-wrapper h3 {
+.categories-section .categories-wrapper .category-item a:hover:after {
+  opacity: 1;
+}
+.categories-section .categories-wrapper .category-item h3 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.categories-section .categories-wrapper .category-item:hover h3 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .search-section {

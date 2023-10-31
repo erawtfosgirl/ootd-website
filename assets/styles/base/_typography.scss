@@ -49,12 +49,12 @@
 }
 
 .categories-section {
+    font-family: $oswaldregular;
     .category-item {
-       
         h3 {
             color: $white;
             font-size: 20px;
-            text-transform: capitalize;
+            text-transform: uppercase;
         }
     }
 }

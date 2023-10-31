@@ -11,7 +11,7 @@
 
 .site-header {
     .header-nav {
-        font-family: $oswaldmedium;
+        font-family: $oswaldregular;
         a {
             color: $white;
             font-size: 20px;
@@ -21,37 +21,43 @@
 
     .header-actions {
         font-family: $oswaldregular;
-        button {
+        .search-box a {
             color: $white;
             font-size: 16px;
             text-transform: uppercase;
         }
     }
 }
-
 .slider-section {
     font-family: $oswaldregular;
     .slider-item {
         .slider-content {
-          color: $white;
-          text-transform: uppercase;
+            color: $white;
+            text-transform: uppercase;
         }
         .shop-btn {
             a {
-               color: $white;
-               font-size: 17px;
-               text-transform: uppercase;
+                color: $white;
+                font-size: 17px;
+                text-transform: uppercase;
                 &:hover {
                     color: $black;
                 }
             }
         }
-        .orange{
-            a{
-                color: $orange;
-                &:hover{
-                    color: $white;
-                }
+    }
+}
+.search-section {
+    input {
+        font-family: $oswaldregular;
+        font-size: 30px;
+        color: $black;
+        &::placeholder {
+            color: $gray;
+        }
+        &:focus {
+            &::placeholder {
+                color: transparent;
             }
         }
     }

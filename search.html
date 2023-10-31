@@ -75,31 +75,25 @@
     </header>
 
     <main>
-        <section class="slider-section swiper mySwiper vh-100 overflow-hidden">
-            <div class="slider-wrapper swiper-wrapper">
-                <div class="slider-item swiper-slide">
-                    <img class="h-100 w-100 object-fit-cover" src="assets/images/newDsktop_6.webp" alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>NEW IN</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
+        <section class="search-section">
+            <div class="container">
+                <div class="search-wrapper">
+                    <div class="search-bar col-12 d-flex align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M11.5 21.5C16.7467 21.5 21 17.2467 21 12C21 6.75329 16.7467 2.5 11.5 2.5C6.25329 2.5 2 6.75329 2 12C2 17.2467 6.25329 21.5 11.5 21.5Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 22.5L20 20.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <input type="search" placeholder="WHAT ARE YOU LOOKING FOR?">
                     </div>
                 </div>
-                <div class="slider-item swiper-slide">
-                    <img class="h-100 w-100 object-fit-cover" src="assets/images/0000004068_15_1_1.jpg" alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>NEW IN</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="swiper-button-next swiper-btn"></div>
-            <div class="swiper-button-prev swiper-btn"></div>
         </section>
     </main>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -107,18 +101,6 @@
     <!-- Custom JS -->
     <script src="assets/scripts/main.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            cssMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-    </script>
 </body>
 
 </html>

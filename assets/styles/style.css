@@ -25,7 +25,7 @@ a {
   src: url(/assets/fonts/Oswald-Medium.ttf);
 }
 .site-header .header-nav {
-  font-family: OswaldMedium;
+  font-family: OswaldRegular;
 }
 .site-header .header-nav a {
   color: #ffffff;
@@ -35,7 +35,7 @@ a {
 .site-header .header-actions {
   font-family: OswaldRegular;
 }
-.site-header .header-actions button {
+.site-header .header-actions .search-box a {
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
@@ -56,11 +56,23 @@ a {
 .slider-section .slider-item .shop-btn a:hover {
   color: #000000;
 }
-.slider-section .slider-item .orange a {
-  color: #ff9317;
+
+.search-section input {
+  font-family: OswaldRegular;
+  font-size: 30px;
+  color: #000000;
 }
-.slider-section .slider-item .orange a:hover {
-  color: #ffffff;
+.search-section input::-moz-placeholder {
+  color: #D9D9D9;
+}
+.search-section input::placeholder {
+  color: #D9D9D9;
+}
+.search-section input:focus::-moz-placeholder {
+  color: transparent;
+}
+.search-section input:focus::placeholder {
+  color: transparent;
 }
 
 .slider-section .slider-item {
@@ -88,6 +100,19 @@ a {
 }
 .slider-section .slider-item .orange a:hover {
   background-color: #ff9317;
+}
+.slider-section .swiper-btn {
+  transition: 0.2s ease-in-out;
+}
+.slider-section .swiper-btn::after {
+  font-size: 20px !important;
+  color: #ffffff !important;
+}
+.slider-section .swiper-button-prev:hover {
+  left: 7px !important;
+}
+.slider-section .swiper-button-next:hover {
+  right: 7px !important;
 }
 
 .site-header {
@@ -126,7 +151,7 @@ a {
 .site-header .header-nav a:hover::after {
   width: 100%;
 }
-.site-header .header-actions button {
+.site-header .header-actions .search-box {
   background-color: transparent;
   padding: 5px 10px;
   border: 1px solid #ffffff;
@@ -144,4 +169,36 @@ a {
   to {
     transform: translateY(0);
   }
+}
+
+.search-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 8;
+  padding-top: 5rem;
+}
+.search-section .search-bar {
+  border-bottom: 1px solid #000000;
+}
+.search-section .search-bar svg path {
+  stroke: #000000;
+}
+.search-section .search-bar input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+}
+.search-section .search-bar input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background: url("/assets/icons/reset.svg") no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 1;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

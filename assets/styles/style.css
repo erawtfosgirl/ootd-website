@@ -110,6 +110,25 @@ a {
 }
 .collection-section .collection-card a {
   font-family: OswaldMedium;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #000000;
+}
+
+.information-section p {
+  font-family: OswaldBold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.information-section h1 {
+  font-family: OswaldBold;
+  text-transform: uppercase;
+  font-size: 86px;
+}
+.information-section a {
+  font-family: OswaldMedium;
+  text-transform: uppercase;
   font-size: 17px;
   color: #000000;
 }
@@ -147,7 +166,7 @@ a {
   padding: 3px 15px;
   border: 1px solid #ffffff;
   border-radius: 5px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .slider-section .slider-item .shop-btn a:hover {
   background-color: #ffffff;
@@ -305,6 +324,29 @@ a {
 .collection-section .collection-card a:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.information-section .section-box {
+  background-color: purple;
+  background-image: url("/assets/images/1165428802_9_1_1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 96vh;
+  max-width: 100%;
+  position: relative;
+}
+.information-section .section-box .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.information-section .section-box .content a {
+  display: inline-block;
+  padding: 3px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .search-section {

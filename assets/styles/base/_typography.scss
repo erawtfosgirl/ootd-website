@@ -1,6 +1,5 @@
 @use "../utils/variables" as *;
 
-
 @font-face {
     font-family: OswaldLight;
     src: url(/assets/fonts/Oswald-Light.ttf);
@@ -75,7 +74,7 @@
     .product-item {
         .product-details {
             text-align: center;
-            .product-name a{
+            .product-name a {
                 color: $black;
                 font-family: $oswaldlight;
                 overflow: hidden;
@@ -83,31 +82,51 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
-            .price-regular{
+            .price-regular {
                 font-family: $oswaldbold;
             }
-            .price-old{
+            .price-old {
                 font-family: $oswaldregular;
                 color: $dark-gray;
             }
         }
     }
 }
-.collection-section{
-    .collection-card{
-        h1{
+.collection-section {
+    .collection-card {
+        h1 {
             font-family: $oswaldbold;
             font-size: 3rem;
         }
-        p{
+        p {
             font-family: $oswaldlight;
             color: $dark-gray;
         }
-        a{
+        a {
             font-family: $oswaldmedium;
+            text-transform: uppercase;
             font-size: 17px;
             color: $black;
         }
+    }
+}
+.information-section {
+    p {
+        font-family: $oswaldbold;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $white;
+    }
+    h1 {
+        font-family: $oswaldbold;
+        text-transform: uppercase;
+        font-size: 86px;
+    }
+    a {
+        font-family: $oswaldmedium;
+        text-transform: uppercase;
+        font-size: 17px;
+        color: $black;
     }
 }
 .search-section {
@@ -125,4 +144,3 @@
         }
     }
 }
-

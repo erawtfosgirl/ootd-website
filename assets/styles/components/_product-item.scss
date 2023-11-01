@@ -1,0 +1,49 @@
+@use '../utils/variables' as *;
+
+.product-item {
+    .product-image {
+        position: relative;
+        height: 500px;
+        width: 100%;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.2s ease-in-out;
+        }
+    }
+
+    .product-details {
+        position: relative;
+        .product-name {
+            margin-bottom: 5px;
+        }
+        .wishlist {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            padding: 5px;
+            background-color: $white;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9;
+        }
+    }
+
+    &:hover {
+        #img1 {
+            opacity: 0;
+        }
+        .wishlist {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

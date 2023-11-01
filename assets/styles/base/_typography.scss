@@ -56,7 +56,6 @@
         }
     }
 }
-
 .categories-section {
     font-family: $oswaldregular;
     .category-item {
@@ -94,6 +93,23 @@
         }
     }
 }
+.collection-section{
+    .collection-card{
+        h1{
+            font-family: $oswaldbold;
+            font-size: 3rem;
+        }
+        p{
+            font-family: $oswaldlight;
+            color: $dark-gray;
+        }
+        a{
+            font-family: $oswaldmedium;
+            font-size: 17px;
+            color: $black;
+        }
+    }
+}
 .search-section {
     input {
         font-family: $oswaldregular;
@@ -109,3 +125,4 @@
         }
     }
 }
+

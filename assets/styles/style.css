@@ -100,6 +100,20 @@ a {
   color: #949494;
 }
 
+.collection-section .collection-card h1 {
+  font-family: OswaldBold;
+  font-size: 3rem;
+}
+.collection-section .collection-card p {
+  font-family: OswaldLight;
+  color: #949494;
+}
+.collection-section .collection-card a {
+  font-family: OswaldMedium;
+  font-size: 17px;
+  color: #000000;
+}
+
 .search-section input {
   font-family: OswaldRegular;
   font-size: 30px;
@@ -140,6 +154,88 @@ a {
 }
 .slider-section .swiper-pagination-bullet-active {
   background: #ffffff !important;
+}
+
+.product-item .product-image {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.product-item .product-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+.product-item .product-details {
+  position: relative;
+}
+.product-item .product-details .product-name {
+  margin-bottom: 5px;
+}
+.product-item .product-details .wishlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+}
+.product-item:hover #img1 {
+  opacity: 0;
+}
+.product-item:hover .wishlist {
+  opacity: 1;
+  visibility: visible;
+}
+
+.category-item {
+  position: relative;
+  width: 19%;
+}
+.category-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.category-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  z-index: 8;
+  transition: 0.2s ease-in-out;
+}
+.category-item a:hover:after {
+  opacity: 1;
+}
+.category-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.category-item:hover h3 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .site-header {
@@ -198,85 +294,17 @@ a {
   }
 }
 
-.categories-section .category-item {
-  position: relative;
-}
-.categories-section .category-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.categories-section .category-item a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  z-index: 8;
-  transition: 0.2s ease-in-out;
-}
-.categories-section .category-item a:hover:after {
-  opacity: 1;
-}
-.categories-section .category-item h3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  opacity: 0;
-  visibility: hidden;
+.collection-section .collection-card a {
+  display: inline-block;
+  padding: 3px 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
   transition: 0.3s ease-in-out;
 }
-.categories-section .category-item:hover h3 {
-  opacity: 1;
-  visibility: visible;
-}
-
-.trending-section .product-item .product-image {
-  position: relative;
-  height: 500px;
-  width: 100%;
-}
-.trending-section .product-item .product-image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.2s ease-in-out;
-}
-.trending-section .product-item .product-details {
-  position: relative;
-}
-.trending-section .product-item .product-details .product-name {
-  margin-bottom: 5px;
-}
-.trending-section .product-item .product-details .wishlist {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 36px;
-  height: 36px;
-  padding: 5px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9;
-}
-.trending-section .product-item:hover #img1 {
-  opacity: 0;
-}
-.trending-section .product-item:hover .wishlist {
-  opacity: 1;
-  visibility: visible;
+.collection-section .collection-card a:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .search-section {

@@ -4,16 +4,7 @@
 .collection-section {
     .collection-card {
         a {
-            display: inline-block;
-            padding: 3px 15px;
-            border: 1px solid $black;
-            border-radius: 5px;
-            background-color: $white;
-            transition: 0.3s ease-in-out;
-            &:hover {
-                background-color: $black;
-                color: $white;
-            }
+            @include main-btn($black, $white, $black, $white);
         }
     }
 }
@@ -35,11 +26,7 @@
             transform: translate(-50%, -50%);
 
             a {
-                display: inline-block;
-                padding: 3px 15px;
-                border: 1px solid $white;
-                border-radius: 5px;
-                background-color: $white;              
+                @include main-btn($black, transparent, $black, $white);
             }
         }
     }

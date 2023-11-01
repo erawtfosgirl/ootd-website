@@ -170,6 +170,7 @@ a {
 }
 .slider-section .slider-item .shop-btn a:hover {
   background-color: #ffffff;
+  color: #000000;
 }
 .slider-section .swiper-pagination-bullet-active {
   background: #ffffff !important;
@@ -314,11 +315,11 @@ a {
 }
 
 .collection-section .collection-card a {
+  background-color: #ffffff;
   display: inline-block;
   padding: 3px 15px;
   border: 1px solid #000000;
   border-radius: 5px;
-  background-color: #ffffff;
   transition: 0.3s ease-in-out;
 }
 .collection-section .collection-card a:hover {
@@ -342,11 +343,16 @@ a {
   transform: translate(-50%, -50%);
 }
 .information-section .section-box .content a {
+  background-color: transparent;
   display: inline-block;
   padding: 3px 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   border-radius: 5px;
-  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.information-section .section-box .content a:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .search-section {

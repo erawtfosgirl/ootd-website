@@ -12,7 +12,7 @@
         }
         .shop-btn {
             a {
-                @include main-btn;
+                @include main-btn($white,rgba(255, 255, 255, 0.1),$white,$black);
             }
         }
     }

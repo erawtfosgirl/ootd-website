@@ -1,5 +1,10 @@
 @use "../utils/variables" as *;
 
+
+@font-face {
+    font-family: OswaldLight;
+    src: url(/assets/fonts/Oswald-Light.ttf);
+}
 @font-face {
     font-family: OswaldRegular;
     src: url(/assets/fonts/Oswald-Regular.ttf);
@@ -7,6 +12,10 @@
 @font-face {
     font-family: OswaldMedium;
     src: url(/assets/fonts/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: OswaldBold;
+    src: url(/assets/fonts/Oswald-Bold.ttf);
 }
 
 .site-header {
@@ -55,6 +64,33 @@
             color: $white;
             font-size: 20px;
             text-transform: uppercase;
+        }
+    }
+}
+.trending-section {
+    font-family: $oswaldregular;
+    .txt {
+        font-size: 18px;
+        color: $dark-gray;
+    }
+    .product-item {
+        .product-details {
+            text-align: center;
+            .product-name a{
+                color: $black;
+                font-family: $oswaldlight;
+                overflow: hidden;
+                text-align: center;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .price-regular{
+                font-family: $oswaldbold;
+            }
+            .price-old{
+                font-family: $oswaldregular;
+                color: $dark-gray;
+            }
         }
     }
 }

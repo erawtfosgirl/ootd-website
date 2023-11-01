@@ -17,12 +17,20 @@ a {
 }
 
 @font-face {
+  font-family: OswaldLight;
+  src: url(/assets/fonts/Oswald-Light.ttf);
+}
+@font-face {
   font-family: OswaldRegular;
   src: url(/assets/fonts/Oswald-Regular.ttf);
 }
 @font-face {
   font-family: OswaldMedium;
   src: url(/assets/fonts/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: OswaldBold;
+  src: url(/assets/fonts/Oswald-Bold.ttf);
 }
 .site-header .header-nav {
   font-family: OswaldRegular;
@@ -66,16 +74,42 @@ a {
   text-transform: uppercase;
 }
 
+.trending-section {
+  font-family: OswaldRegular;
+}
+.trending-section .txt {
+  font-size: 18px;
+  color: #949494;
+}
+.trending-section .product-item .product-details {
+  text-align: center;
+}
+.trending-section .product-item .product-details .product-name a {
+  color: #000000;
+  font-family: OswaldLight;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.trending-section .product-item .product-details .price-regular {
+  font-family: OswaldBold;
+}
+.trending-section .product-item .product-details .price-old {
+  font-family: OswaldRegular;
+  color: #949494;
+}
+
 .search-section input {
   font-family: OswaldRegular;
   font-size: 30px;
   color: #000000;
 }
 .search-section input::-moz-placeholder {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 .search-section input::placeholder {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 .search-section input:focus::-moz-placeholder {
   color: transparent;
@@ -104,18 +138,8 @@ a {
 .slider-section .slider-item .shop-btn a:hover {
   background-color: #ffffff;
 }
-.slider-section .swiper-btn {
-  transition: 0.2s ease-in-out;
-}
-.slider-section .swiper-btn::after {
-  font-size: 20px !important;
-  color: #ffffff !important;
-}
-.slider-section .swiper-button-prev:hover {
-  left: 7px !important;
-}
-.slider-section .swiper-button-next:hover {
-  right: 7px !important;
+.slider-section .swiper-pagination-bullet-active {
+  background: #ffffff !important;
 }
 
 .site-header {
@@ -174,18 +198,16 @@ a {
   }
 }
 
-.categories-section .categories-wrapper .category-item {
+.categories-section .category-item {
   position: relative;
-  max-width: 20%;
-  height: auto;
 }
-.categories-section .categories-wrapper .category-item img {
+.categories-section .category-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.categories-section .categories-wrapper .category-item a::after {
+.categories-section .category-item a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -197,10 +219,10 @@ a {
   z-index: 8;
   transition: 0.2s ease-in-out;
 }
-.categories-section .categories-wrapper .category-item a:hover:after {
+.categories-section .category-item a:hover:after {
   opacity: 1;
 }
-.categories-section .categories-wrapper .category-item h3 {
+.categories-section .category-item h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -210,7 +232,49 @@ a {
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
-.categories-section .categories-wrapper .category-item:hover h3 {
+.categories-section .category-item:hover h3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.trending-section .product-item .product-image {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.trending-section .product-item .product-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+.trending-section .product-item .product-details {
+  position: relative;
+}
+.trending-section .product-item .product-details .product-name {
+  margin-bottom: 5px;
+}
+.trending-section .product-item .product-details .wishlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+}
+.trending-section .product-item:hover #img1 {
+  opacity: 0;
+}
+.trending-section .product-item:hover .wishlist {
   opacity: 1;
   visibility: visible;
 }

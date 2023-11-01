@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@use '../utils/mixins' as *;
+@use "../utils/mixins" as *;
 
 .slider-section {
     .slider-item {
@@ -12,26 +12,13 @@
         }
         .shop-btn {
             a {
-               @include main-btn
+                @include main-btn;
             }
         }
     }
 
-    .swiper-btn {
-        transition: .2s ease-in-out;
-        &::after {
-            font-size: 20px !important;
-            color: $white !important;
-        }
-    }
-    .swiper-button-prev{
-        &:hover{
-            left: 7px !important;
-        }
-    }
-    .swiper-button-next{
-        &:hover{
-            right: 7px !important;
-        }
+    // Swiper Pagination CSS
+    .swiper-pagination-bullet-active {
+        background: $white !important;
     }
 }

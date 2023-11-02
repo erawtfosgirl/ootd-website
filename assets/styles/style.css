@@ -173,6 +173,23 @@ a {
   color: transparent;
 }
 
+.site-footer {
+  color: #ffffff;
+}
+.site-footer h5 {
+  font-family: OswaldBold;
+}
+.site-footer h4 {
+  font-family: OswaldLight;
+  font-size: 14px;
+}
+.site-footer li a {
+  font-family: OswaldRegular;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+
 .slider-section .slider-item {
   position: relative;
 }
@@ -334,6 +351,45 @@ a {
   to {
     transform: translateY(0);
   }
+}
+
+.site-footer {
+  background-color: #101010;
+}
+.site-footer .bottom-header {
+  padding: 50px 0;
+}
+.site-footer .bottom-header h5 {
+  margin-bottom: 20px;
+}
+.site-footer .bottom-header img {
+  width: 80px;
+  height: 80px;
+}
+.site-footer .bottom-header .menu li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.site-footer .bottom-header .social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.site-footer .bottom-header .social-links a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.site-footer .bottom-footer {
+  background-color: #000000;
+  padding: 20px 0;
+}
+.site-footer .bottom-footer p {
+  margin: 0;
 }
 
 .collection-section .collection-card a {

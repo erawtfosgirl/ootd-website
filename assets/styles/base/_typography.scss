@@ -167,3 +167,21 @@
         }
     }
 }
+.site-footer {
+    color: $white;
+    h5 {
+        font-family: $oswaldbold;
+    }
+    h4{
+        font-family: $oswaldlight;
+        font-size: 14px;
+    }
+    li {
+        a {
+            font-family: $oswaldregular;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: $gray;
+        }
+    }
+}

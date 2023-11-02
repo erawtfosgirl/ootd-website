@@ -129,6 +129,29 @@
         color: $black;
     }
 }
+.newsletter-section {
+    .title {
+        font-family: $oswaldbold;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .subtitle {
+        font-family: $oswaldregular;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    input[type="email"] {
+        font-family: $oswaldlight;
+        font-size: 16px;
+    }
+    button {
+        font-family: $oswaldmedium;
+        color: $white;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
 .search-section {
     input {
         font-family: $oswaldregular;

@@ -10,24 +10,52 @@
 }
 
 .information-section {
-    .section-box {
-        background-color: purple;
-        background-image: url("/assets/images/1165428802_9_1_1.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        height: 96vh;
-        max-width: 100%;
-        position: relative;
+    background-color: purple;
+    background-image: url("/assets/images/1165428802_9_1_1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 96vh;
+    max-width: 100%;
+    position: relative;
 
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-            a {
-                @include main-btn($black, transparent, $black, $white);
-            }
+        a {
+            @include main-btn($black, transparent, $black, $white);
         }
+    }
+}
+
+.newsletter-section {
+    background-color: $newsletter-bg;
+    height: 60vh;
+
+    .title{
+        max-width: 45%;
+    }
+
+    input[type="email"] {
+        max-width: 343px;
+        width: 100%;
+        height: 55px;
+        border: 1px solid $dark-gray;
+        border-radius: 8px;
+        background-color: $white;
+        padding: 0 16px;
+        outline: none;
+    }
+    button {
+        display: block;
+        max-width: 343px;
+        width: 100%;
+        height: 57px;
+        border-radius: 6px;
+        background-color: $black;
+        border: 1px solid $black;
+        cursor: pointer;
     }
 }

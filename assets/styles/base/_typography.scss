@@ -34,6 +34,10 @@ body {
     }
 }
 .categories-section {
+    h1{
+        font-weight: 300;
+        letter-spacing: 10px;
+    }
     h3 {
         font-weight: 500;
         color: $white;
@@ -41,7 +45,7 @@ body {
         text-transform: uppercase;
     }
 }
-.trending-section {
+.products-section {
     color: $black;
     .txt {
         font-weight: 300;

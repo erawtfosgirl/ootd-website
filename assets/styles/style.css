@@ -47,6 +47,10 @@ body {
   color: #000000;
 }
 
+.categories-section h1 {
+  font-weight: 300;
+  letter-spacing: 10px;
+}
 .categories-section h3 {
   font-weight: 500;
   color: #ffffff;
@@ -54,18 +58,18 @@ body {
   text-transform: uppercase;
 }
 
-.trending-section {
+.products-section {
   color: #000000;
 }
-.trending-section .txt {
+.products-section .txt {
   font-weight: 300;
   font-size: 20px;
   color: #949494;
 }
-.trending-section .product-details {
+.products-section .product-details {
   text-align: center;
 }
-.trending-section .product-details .product-name a {
+.products-section .product-details .product-name a {
   font-weight: 300;
   font-size: 18px;
   color: #000000;
@@ -73,13 +77,13 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.trending-section .product-details .product-price {
+.products-section .product-details .product-price {
   font-size: 16px;
 }
-.trending-section .product-details .price-regular {
+.products-section .product-details .price-regular {
   font-weight: 600;
 }
-.trending-section .product-details .price-old {
+.products-section .product-details .price-old {
   font-weight: 400;
   color: #949494;
 }

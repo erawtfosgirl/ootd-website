@@ -1,6 +1,7 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
 .product-item {
+    position: relative;
     .product-image {
         position: relative;
         height: 500px;
@@ -20,23 +21,26 @@
         .product-name {
             margin-bottom: 5px;
         }
-        .wishlist {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 36px;
-            height: 36px;
-            padding: 5px;
-            background-color: $white;
-            border-radius: 50%;
-            border: none;
-            box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
-            opacity: 0;
-            visibility: hidden;
-            z-index: 9;
-        }
     }
 
+    .wishlist {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9;
+        transition: 0.2s ease-in;
+    }
     &:hover {
         #img1 {
             opacity: 0;
@@ -44,6 +48,35 @@
         .wishlist {
             opacity: 1;
             visibility: visible;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .product-item {
+        .wishlist {
+            position: absolute;
+            top: 10px;
+            right: 17px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .product-item {
+        .product-image {
+            height: 300px;
+        }
+        .wishlist {
+            position: absolute;
+            top: 10px;
+            right: 17px;
+            width: 30px;
+            height: 30px;
+            svg {
+                width: 14px;
+                height: 14px;
+            }
         }
     }
 }

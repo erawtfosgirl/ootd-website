@@ -140,7 +140,6 @@ body {
         }
     }
 }
-
 @media screen and (max-width: 992px) {
     .site-header {
         .search {
@@ -156,6 +155,82 @@ body {
             }
         }
     }
+    .categories-section {
+        h1 {
+            letter-spacing: 5px;
+        }
+    }
+    .products-section {
+        .product-details {
+            .product-name a {
+                font-size: 18px;
+            }
+            .product-price {
+                font-size: 16px;
+            }
+        }
+    }
+    .collection-section {
+        h1,
+        p {
+            text-align: center;
+        }
+    }
+    .information-section {
+        p {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 56px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products-section {
+        .product-details {
+            .product-name a {
+                font-size: 14px;
+            }
+            .product-price {
+                font-size: 12px;
+            }
+        }
+    }
+    .collection-section {
+        h1 {
+            font-size: 30px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+    .information-section {
+        p {
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+    .newsletter-section {
+        .title {
+            font-size: 30px;
+        }
+        .subtitle {
+            font-size: 13px;
+        }
+        input[type="email"] {
+            font-size: 14px;
+        }
+        button {
+            font-size: 16px;
+        }
+    }
+ 
 }
 // .search-section {
 //     input {

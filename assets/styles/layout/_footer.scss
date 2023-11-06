@@ -2,7 +2,7 @@
 .site-footer {
     background-color: $footer-bg;
 
-    .bottom-header {
+    .footer-header {
         padding: 50px 0;
         h5 {
             margin-bottom: 25px;
@@ -11,10 +11,14 @@
             width: 80px;
             height: 80px;
         }
-        .menu{
-            li:not(:last-child){
+        .menu {
+            li:not(:last-child) {
                 margin-bottom: 10px;
             }
+        }
+        .social-menu {
+            display: flex;
+            gap: 10px;
         }
         .social-links {
             a {
@@ -40,6 +44,23 @@
         padding: 20px 0;
         p {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .site-footer {
+        .footer-header {
+            text-align: center;
+            h5 {
+                margin: 25px 0;
+            }
+            .social-menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
         }
     }
 }

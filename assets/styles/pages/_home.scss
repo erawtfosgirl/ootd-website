@@ -5,9 +5,14 @@
     a {
         @include main-btn($black, $white, $black, $white);
     }
+    .collection-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
 }
 .information-section {
-    background-color: purple;
     background-image: url("/assets/images/1165428802_9_1_1.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -53,5 +58,36 @@
         background-color: $black;
         border: 1px solid $black;
         cursor: pointer;
+    }
+}
+@media screen and (max-width: 992px) {
+    .collection-section {
+        a {
+            padding: 3px 10px;
+        }
+      
+        .collection-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .information-section {
+        background-attachment: local;
+        height: 36vh;
+
+        .content {
+            width: 80%;
+            a {
+                padding: 3px 10px;
+            }
+          
+        }
+    }
+    .newsletter-section {
+        .title {
+            max-width: 85%;
+        }
     }
 }

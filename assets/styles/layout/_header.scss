@@ -70,9 +70,9 @@
         }
     }
 }
-
-@media screen and (max-width: 576px) {
+@media (max-width: 992px) {
     .site-header {
+        
         .header-logo {
             img {
                 width: 30px;
@@ -92,14 +92,14 @@
         }
         .sidebarmenu {
             display: block;
+            width: 50%;
             height: 100vh;
             position: fixed;
-            z-index: 2000;
             top: 57px;
             left: -100%;
             background-color: $white;
+            z-index: 2000;
             overflow-y: scroll;
-            width: 100%;
             transition: 0.3s ease-in-out;
             ul {
                 li {
@@ -113,3 +113,12 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .site-header {
+        .sidebarmenu {
+            width: 100%;
+        }
+    }
+}
+
+

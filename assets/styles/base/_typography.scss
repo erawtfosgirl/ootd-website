@@ -141,7 +141,7 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     .site-header {
         .search {
             a {
@@ -149,12 +149,11 @@ body {
                 font-size: 14px;
             }
         }
-        .sidebarmenu{
-           a{
-            font-weight: 400;
-            color: $black;
-
-           }
+        .sidebarmenu {
+            a {
+                font-weight: 400;
+                color: $black;
+            }
         }
     }
 }

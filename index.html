@@ -31,62 +31,71 @@
 
     <header class="site-header">
         <div class="container">
-            <div class="row align-items-center justify-content-between ">
-                <div class="col-lg-1">
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="assets/icons/logo.svg" alt="Logo">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-1 col-1 header-logo">
+                    <a href="index.html">
+                        <img src="assets/icons/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <nav class="col-lg-6 header-nav">
+                    <ul class="d-flex justify-content-evenly align-items-center">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#shop">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-lg-5 col-11 header-actions 
+                    d-flex justify-content-end align-items-center
+                    gap-lg-4 gap-2">
+                    <div class="search col-lg-5 col-7 mx-3">
+                        <a href="search.html" class="d-flex align-items-center gap-2">
+                            <img src="assets/icons/search.svg" alt="Search Icon">
+                            Search
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <nav class="header-nav">
-                        <ul class="d-flex justify-content-evenly  align-items-center">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#shop">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-5">
-                    <div class="header-actions d-flex justify-content-end align-items-center gap-4">
-                        <div class="col-5 search-box">
-                            <a href="search.html" class="col-12 d-flex align-items-center gap-2">
-                                <img src="assets/icons/search.svg" alt="Search Icon">
-                                Search
-                            </a>
-                        </div>
-                        <div class="wishlist">
-                            <a href="#wishlist">
-                                <img src="assets/icons/wishlist.svg" alt="Wishlist Icon">
-                            </a>
-                        </div>
-                        <div class="cart">
-                            <a href="#cart">
-                                <img src="assets/icons/cart.svg" alt="Cart Icon">
-                            </a>
-                        </div>
-                        <div class="user">
-                            <a href="#login">
-                                <img src="assets/icons/user.svg" alt="Cart Icon">
-                            </a>
-                        </div>
+                    <div class="wishlist">
+                        <a href="#wishlist">
+                            <img src="assets/icons/wishlist.svg" alt="Wishlist Icon">
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="#cart">
+                            <img src="assets/icons/cart.svg" alt="Cart Icon">
+                        </a>
+                    </div>
+                    <div class="user">
+                        <a href="#login">
+                            <img src="assets/icons/user.svg" alt="Cart Icon">
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <img src="assets/icons/menu.svg" alt="Menu Icon">
                     </div>
                 </div>
+                <div class="sidebarmenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </header>
 
-    <main>
+    <main class="d-none">
         <section class="slider-section swiper mySwiper vh-100 overflow-hidden">
             <div class="slider-wrapper swiper-wrapper">
                 <div class="slider-item swiper-slide">
@@ -324,7 +333,7 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer d-none">
         <div class="container bottom-header">
             <div class="row">
                 <div class="col-lg-3">

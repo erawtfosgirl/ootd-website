@@ -5,6 +5,7 @@
     width: 100%;
     padding: 10px 0;
     background-color: transparent;
+    background-color: black;
     z-index: 9;
 
     .header-nav {
@@ -41,14 +42,19 @@
             }
         }
     }
-
     .header-actions {
-        .search-box {
+        .search {
             background-color: transparent;
             padding: 5px 10px;
             border: 1px solid $white;
             border-radius: 5px;
         }
+        .hamburger {
+            display: none;
+        }
+    }
+    .sidebarmenu {
+        display: none;
     }
 }
 .sticky {
@@ -61,6 +67,49 @@
         }
         to {
             transform: translateY(0);
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .site-header {
+        .header-logo {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .header-nav {
+            display: none;
+        }
+        .header-actions {
+            .user {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+        .sidebarmenu {
+            display: block;
+            height: 100vh;
+            position: fixed;
+            z-index: 2000;
+            top: 57px;
+            left: -100%;
+            background-color: $white;
+            overflow-y: scroll;
+            width: 100%;
+            transition: 0.3s ease-in-out;
+            ul {
+                li {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $gray;
+                }
+            }
+        }
+        .active {
+            left: 0;
         }
     }
 }

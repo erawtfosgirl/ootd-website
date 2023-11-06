@@ -10,3 +10,18 @@ window.addEventListener("scroll", () => {
         header.classList.remove("sticky");
     }
 });
+
+/* Sidebar Menu */
+
+let hamburger = document.querySelector('.hamburger');
+let sidebarmenu = document.querySelector('.sidebarmenu');
+
+hamburger.addEventListener('click', () => {
+    let isActive = sidebarmenu.classList.contains('active');
+
+    if (!isActive) {
+        sidebarmenu.classList.add('active');
+    } else {
+        sidebarmenu.classList.remove('active');
+    }
+})

@@ -12,7 +12,7 @@ body {
         font-size: 20px;
         text-transform: uppercase;
     }
-    .search-box {
+    .search {
         a {
             font-weight: 400;
             font-size: 16px;
@@ -34,7 +34,7 @@ body {
     }
 }
 .categories-section {
-    h1{
+    h1 {
         font-weight: 300;
         letter-spacing: 10px;
     }
@@ -129,7 +129,7 @@ body {
 .site-footer {
     color: $white;
     h5 {
-       font-weight: 700;
+        font-weight: 700;
     }
     li {
         a {
@@ -137,6 +137,24 @@ body {
             font-size: 16px;
             text-transform: capitalize;
             color: $gray;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .site-header {
+        .search {
+            a {
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+        .sidebarmenu{
+           a{
+            font-weight: 400;
+            color: $black;
+
+           }
         }
     }
 }
@@ -155,4 +173,3 @@ body {
 //         }
 //     }
 // }
-

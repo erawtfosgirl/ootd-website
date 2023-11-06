@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 /* Colors */
-/* Fonts */
 * {
   margin: 0;
   padding: 0;
@@ -16,175 +16,135 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: OswaldLight;
-  src: url(/assets/fonts/Oswald-Light.ttf);
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
 }
-@font-face {
-  font-family: OswaldRegular;
-  src: url(/assets/fonts/Oswald-Regular.ttf);
+
+.site-header {
+  font-weight: 500;
 }
-@font-face {
-  font-family: OswaldMedium;
-  src: url(/assets/fonts/Oswald-Medium.ttf);
-}
-@font-face {
-  font-family: OswaldBold;
-  src: url(/assets/fonts/Oswald-Bold.ttf);
-}
-.site-header .header-nav {
-  font-family: OswaldRegular;
-}
-.site-header .header-nav a {
+.site-header a {
   color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
 }
-.site-header .header-actions {
-  font-family: OswaldRegular;
-}
-.site-header .header-actions .search-box a {
-  color: #ffffff;
+.site-header .search-box a {
+  font-weight: 400;
   font-size: 16px;
-  text-transform: uppercase;
 }
 
 .slider-section {
-  font-family: OswaldRegular;
-}
-.slider-section .slider-item .slider-content {
-  color: #ffffff;
+  font-weight: 400;
   text-transform: uppercase;
+  color: #ffffff;
 }
-.slider-section .slider-item .shop-btn a {
+.slider-section .shop-btn a {
   color: #ffffff;
   font-size: 17px;
-  text-transform: uppercase;
 }
-.slider-section .slider-item .shop-btn a:hover {
+.slider-section .shop-btn a:hover {
   color: #000000;
 }
 
-.categories-section {
-  font-family: OswaldRegular;
-}
-.categories-section .category-item h3 {
+.categories-section h3 {
+  font-weight: 500;
   color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .trending-section {
-  font-family: OswaldRegular;
+  color: #000000;
 }
 .trending-section .txt {
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 20px;
   color: #949494;
 }
-.trending-section .product-item .product-details {
+.trending-section .product-details {
   text-align: center;
 }
-.trending-section .product-item .product-details .product-name a {
+.trending-section .product-details .product-name a {
+  font-weight: 300;
+  font-size: 18px;
   color: #000000;
-  font-family: OswaldLight;
-  overflow: hidden;
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.trending-section .product-item .product-details .price-regular {
-  font-family: OswaldBold;
+.trending-section .product-details .product-price {
+  font-size: 16px;
 }
-.trending-section .product-item .product-details .price-old {
-  font-family: OswaldRegular;
+.trending-section .product-details .price-regular {
+  font-weight: 600;
+}
+.trending-section .product-details .price-old {
+  font-weight: 400;
   color: #949494;
 }
 
-.collection-section .collection-card h1 {
-  font-family: OswaldBold;
+.collection-section h1 {
+  font-weight: 700;
   font-size: 3rem;
 }
-.collection-section .collection-card p {
-  font-family: OswaldLight;
+.collection-section p {
+  font-weight: 300;
   color: #949494;
 }
-.collection-section .collection-card a {
-  font-family: OswaldMedium;
-  text-transform: uppercase;
+.collection-section a {
+  font-weight: 500;
   font-size: 17px;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.information-section p {
-  font-family: OswaldBold;
-  font-size: 22px;
+.information-section {
+  font-weight: 700;
   text-transform: uppercase;
+}
+.information-section p {
+  font-size: 25px;
   color: #ffffff;
 }
 .information-section h1 {
-  font-family: OswaldBold;
-  text-transform: uppercase;
   font-size: 86px;
 }
 .information-section a {
-  font-family: OswaldMedium;
-  text-transform: uppercase;
+  font-weight: 500;
   font-size: 17px;
   color: #000000;
 }
 
-.newsletter-section .title {
-  font-family: OswaldBold;
-  font-size: 40px;
+.newsletter-section {
   text-transform: uppercase;
+}
+.newsletter-section .title {
+  font-weight: 700;
+  font-size: 40px;
 }
 .newsletter-section .subtitle {
-  font-family: OswaldRegular;
+  font-weight: 400;
   font-size: 15px;
-  text-transform: uppercase;
 }
 .newsletter-section input[type=email] {
-  font-family: OswaldLight;
+  font-weight: 300;
   font-size: 16px;
 }
 .newsletter-section button {
-  font-family: OswaldMedium;
-  color: #ffffff;
+  font-weight: 500;
   font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.search-section input {
-  font-family: OswaldRegular;
-  font-size: 30px;
-  color: #000000;
-}
-.search-section input::-moz-placeholder {
-  color: #d9d9d9;
-}
-.search-section input::placeholder {
-  color: #d9d9d9;
-}
-.search-section input:focus::-moz-placeholder {
-  color: transparent;
-}
-.search-section input:focus::placeholder {
-  color: transparent;
+  color: #ffffff;
 }
 
 .site-footer {
   color: #ffffff;
 }
 .site-footer h5 {
-  font-family: OswaldBold;
-}
-.site-footer h4 {
-  font-family: OswaldLight;
-  font-size: 14px;
+  font-weight: 700;
 }
 .site-footer li a {
-  font-family: OswaldRegular;
+  font-weight: 400;
   font-size: 16px;
   text-transform: capitalize;
   color: #d9d9d9;
@@ -259,13 +219,15 @@ a {
 
 .category-item {
   position: relative;
-  width: 19%;
+  overflow: hidden;
 }
 .category-item img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 .category-item a::after {
   content: "";
@@ -291,6 +253,9 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease-in-out;
+}
+.category-item:hover img {
+  transform: scale(1.1);
 }
 .category-item:hover h3 {
   opacity: 1;
@@ -360,7 +325,7 @@ a {
   padding: 50px 0;
 }
 .site-footer .bottom-header h5 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .site-footer .bottom-header img {
   width: 80px;
@@ -392,7 +357,7 @@ a {
   margin: 0;
 }
 
-.collection-section .collection-card a {
+.collection-section a {
   background-color: #ffffff;
   display: inline-block;
   padding: 3px 15px;
@@ -400,7 +365,7 @@ a {
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
-.collection-section .collection-card a:hover {
+.collection-section a:hover {
   background-color: #000000;
   color: #ffffff;
 }

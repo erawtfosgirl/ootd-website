@@ -2,10 +2,8 @@
 @use "../utils/mixins" as *;
 
 .collection-section {
-    .collection-card {
-        a {
-            @include main-btn($black, $white, $black, $white);
-        }
+    a {
+        @include main-btn($black, $white, $black, $white);
     }
 }
 .information-section {
@@ -32,7 +30,7 @@
     background-color: $newsletter-bg;
     height: 60vh;
 
-    .title{
+    .title {
         max-width: 45%;
     }
 

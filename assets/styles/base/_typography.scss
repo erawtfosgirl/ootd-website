@@ -1,187 +1,154 @@
 @use "../utils/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
-@font-face {
-    font-family: OswaldLight;
-    src: url(/assets/fonts/Oswald-Light.ttf);
+body {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
 }
-@font-face {
-    font-family: OswaldRegular;
-    src: url(/assets/fonts/Oswald-Regular.ttf);
-}
-@font-face {
-    font-family: OswaldMedium;
-    src: url(/assets/fonts/Oswald-Medium.ttf);
-}
-@font-face {
-    font-family: OswaldBold;
-    src: url(/assets/fonts/Oswald-Bold.ttf);
-}
-
 .site-header {
-    .header-nav {
-        font-family: $oswaldregular;
-        a {
-            color: $white;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
+    font-weight: 500;
+    a {
+        color: $white;
+        font-size: 20px;
+        text-transform: uppercase;
     }
-
-    .header-actions {
-        font-family: $oswaldregular;
-        .search-box a {
-            color: $white;
+    .search-box {
+        a {
+            font-weight: 400;
             font-size: 16px;
-            text-transform: uppercase;
         }
     }
 }
 .slider-section {
-    font-family: $oswaldregular;
-    .slider-item {
-        .slider-content {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+    .shop-btn {
+        a {
             color: $white;
-            text-transform: uppercase;
-        }
-        .shop-btn {
-            a {
-                color: $white;
-                font-size: 17px;
-                text-transform: uppercase;
-                &:hover {
-                    color: $black;
-                }
+            font-size: 17px;
+            &:hover {
+                color: $black;
             }
         }
     }
 }
 .categories-section {
-    font-family: $oswaldregular;
-    .category-item {
-        h3 {
-            color: $white;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
+    h3 {
+        font-weight: 500;
+        color: $white;
+        font-size: 20px;
+        text-transform: uppercase;
     }
 }
 .trending-section {
-    font-family: $oswaldregular;
+    color: $black;
     .txt {
-        font-size: 18px;
+        font-weight: 300;
+        font-size: 20px;
         color: $dark-gray;
     }
-    .product-item {
-        .product-details {
+    .product-details {
+        text-align: center;
+        .product-name a {
+            font-weight: 300;
+            font-size: 18px;
+            color: $black;
             text-align: center;
-            .product-name a {
-                color: $black;
-                font-family: $oswaldlight;
-                overflow: hidden;
-                text-align: center;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            .price-regular {
-                font-family: $oswaldbold;
-            }
-            .price-old {
-                font-family: $oswaldregular;
-                color: $dark-gray;
-            }
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .product-price {
+            font-size: 16px;
+        }
+        .price-regular {
+            font-weight: 600;
+        }
+        .price-old {
+            font-weight: 400;
+            color: $dark-gray;
         }
     }
 }
 .collection-section {
-    .collection-card {
-        h1 {
-            font-family: $oswaldbold;
-            font-size: 3rem;
-        }
-        p {
-            font-family: $oswaldlight;
-            color: $dark-gray;
-        }
-        a {
-            font-family: $oswaldmedium;
-            text-transform: uppercase;
-            font-size: 17px;
-            color: $black;
-        }
+    h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    p {
+        font-weight: 300;
+        color: $dark-gray;
+    }
+    a {
+        font-weight: 500;
+        font-size: 17px;
+        color: $black;
+        text-transform: uppercase;
     }
 }
 .information-section {
+    font-weight: 700;
+    text-transform: uppercase;
     p {
-        font-family: $oswaldbold;
-        font-size: 22px;
-        text-transform: uppercase;
+        font-size: 25px;
         color: $white;
     }
     h1 {
-        font-family: $oswaldbold;
-        text-transform: uppercase;
         font-size: 86px;
     }
     a {
-        font-family: $oswaldmedium;
-        text-transform: uppercase;
+        font-weight: 500;
         font-size: 17px;
         color: $black;
     }
 }
 .newsletter-section {
+    text-transform: uppercase;
     .title {
-        font-family: $oswaldbold;
+        font-weight: 700;
         font-size: 40px;
-        text-transform: uppercase;
     }
     .subtitle {
-        font-family: $oswaldregular;
+        font-weight: 400;
         font-size: 15px;
-        text-transform: uppercase;
     }
     input[type="email"] {
-        font-family: $oswaldlight;
+        font-weight: 300;
         font-size: 16px;
     }
     button {
-        font-family: $oswaldmedium;
-        color: $white;
+        font-weight: 500;
         font-size: 18px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-}
-.search-section {
-    input {
-        font-family: $oswaldregular;
-        font-size: 30px;
-        color: $black;
-        &::placeholder {
-            color: $gray;
-        }
-        &:focus {
-            &::placeholder {
-                color: transparent;
-            }
-        }
+        color: $white;
     }
 }
 .site-footer {
     color: $white;
     h5 {
-        font-family: $oswaldbold;
-    }
-    h4{
-        font-family: $oswaldlight;
-        font-size: 14px;
+       font-weight: 700;
     }
     li {
         a {
-            font-family: $oswaldregular;
+            font-weight: 400;
             font-size: 16px;
             text-transform: capitalize;
             color: $gray;
         }
     }
 }
+// .search-section {
+//     input {
+//         font-family: $oswaldregular;
+//         font-size: 30px;
+//         color: $black;
+//         &::placeholder {
+//             color: $gray;
+//         }
+//         &:focus {
+//             &::placeholder {
+//                 color: transparent;
+//             }
+//         }
+//     }
+// }
+

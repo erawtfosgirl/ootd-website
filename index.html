@@ -11,6 +11,14 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -106,32 +114,38 @@
         <section class="categories-section mt-5">
             <div class="container">
                 <h1 class="mb-4 text-center">Shop by categories</h1>
-                <div class="row g-0 justify-content-between align-items-center">
-                    <div class="category-item" data-tilt>
+                <div class="owl-carousel owl-theme">
+                    <div class="category-item">
                         <a href="#">
                             <img src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
                             <h3>Accessories</h3>
                         </a>
                     </div>
-                    <div class="category-item" data-tilt>
+                    <div class="category-item">
                         <a href="#">
                             <img src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
                             <h3>Blazer</h3>
                         </a>
                     </div>
-                    <div class="category-item" data-tilt>
+                    <div class="category-item">
                         <a href="#">
                             <img src="assets/images/categories/6011210814_2_1_1.jpg" alt="">
                             <h3>Bags</h3>
                         </a>
                     </div>
-                    <div class="category-item" data-tilt>
+                    <div class="category-item">
                         <a href="#">
                             <img src="assets/images/categories/1165192303_1_1_1.jpg" alt="">
                             <h3>Skirts</h3>
                         </a>
                     </div>
-                    <div class="category-item" data-tilt>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="assets/images/categories/8820321800_2_1_1.jpg" alt="">
+                            <h3>Dress</h3>
+                        </a>
+                    </div>
+                    <div class="category-item">
                         <a href="#">
                             <img src="assets/images/categories/8820321800_2_1_1.jpg" alt="">
                             <h3>Dress</h3>
@@ -264,8 +278,6 @@
                             </button>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -273,23 +285,18 @@
         <section class="collection-section mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 collection-card">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="img-fluid" src="assets/images/7950939625_9_1_1.jpg" alt="Image">
-                            </div>
-                            <div class="col-6 px-3 d-flex flex-column gap-3 justify-content-center align-items-start">
-                                <h1>Extra 10% off on summer collection</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Recusandae commodi tempora, aut omnis maiores rem numquam id perferendis delectus
-                                    quos, deleniti temporibus saepe animi facilis incidunt, non doloremque esse soluta!
-                                </p>
-                                <a href="#shop">Shop Now</a>
-                            </div>
-                        </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="assets/images/7950939625_9_1_1.jpg" alt="Image">
                     </div>
-
+                    <div class="col-6 px-3 d-flex flex-column gap-3 justify-content-center align-items-start">
+                        <h1>Extra 10% off on summer collection</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Recusandae commodi tempora, aut omnis maiores rem numquam id perferendis delectus
+                            quos, deleniti temporibus saepe animi facilis incidunt, non doloremque esse soluta!
+                        </p>
+                        <a href="#shop">Shop Now</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -307,7 +314,7 @@
         <section class="newsletter-section mt-5">
             <div class="container h-100 ">
                 <div
-                    class="row h-100 flex-column justify-content-center align-items-center gap-4 text-center newsletter-content">
+                    class="d-flex flex-column h-100 justify-content-center align-items-center gap-4 text-center newsletter-content">
                     <h1 class="title">THE MOST OOTD OF THE SEASON IT’S IN OUR NEWSLETTER!</h1>
                     <div class="subtitle">SUBSCRIBE TO OUR NEWSLETTER</div>
                     <input type="email" placeholder="E-mail" required>
@@ -320,10 +327,12 @@
     <footer class="site-footer">
         <div class="container bottom-header">
             <div class="row">
-                <div class="col-3">
-                    <img src="assets/icons/logo.svg" alt="Logo">
+                <div class="col-lg-3">
+                    <a href="">
+                        <img src="assets/icons/logo.svg" alt="Logo">
+                    </a>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <h5>Help</h5>
                     <ul class="menu">
                         <li>
@@ -348,7 +357,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <h5>Business</h5>
                     <ul class="menu">
                         <li>
@@ -369,20 +378,20 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <h5>Follow Us</h5>
                     <ul class="d-flex align-items-center gap-2">
                         <li class="social-links">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li class="social-links">
-                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
                         </li>
                         <li class="social-links">
-                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
                         </li>
                         <li class="social-links">
-                            <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -401,8 +410,10 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Tilt JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Custom JS -->
     <script src="assets/scripts/main.js"></script>
@@ -418,6 +429,26 @@
                 clickable: true,
             },
         });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            dots: false,
+            responsiveClass: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 5,
+                }
+            }
+        })
     </script>
 </body>
 

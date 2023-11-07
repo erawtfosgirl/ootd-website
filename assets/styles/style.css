@@ -18,11 +18,11 @@ a {
 
 body {
   font-family: "Oswald", sans-serif;
-  letter-spacing: 1px;
 }
 
 .site-header {
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 .site-header a {
   color: #ffffff;
@@ -30,8 +30,7 @@ body {
   text-transform: uppercase;
 }
 .site-header .search a {
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .slider-section {
@@ -60,11 +59,17 @@ body {
 
 .products-section {
   color: #000000;
+  letter-spacing: 1px;
 }
 .products-section .txt {
   font-weight: 300;
   font-size: 20px;
   color: #949494;
+}
+.products-section .discount-box {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 12px;
 }
 .products-section .product-details {
   text-align: center;
@@ -90,10 +95,12 @@ body {
 
 .collection-section h1 {
   font-weight: 700;
+  letter-spacing: 1px;
   font-size: 3rem;
 }
 .collection-section p {
   font-weight: 300;
+  letter-spacing: 1px;
   color: #949494;
 }
 .collection-section a {
@@ -109,10 +116,12 @@ body {
 }
 .information-section p {
   font-size: 25px;
+  letter-spacing: 1px;
   color: #ffffff;
 }
 .information-section h1 {
   font-size: 86px;
+  letter-spacing: 1px;
 }
 .information-section a {
   font-weight: 500;
@@ -122,6 +131,7 @@ body {
 
 .newsletter-section {
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .newsletter-section .title {
   font-weight: 700;
@@ -134,6 +144,7 @@ body {
 .newsletter-section input[type=email] {
   font-weight: 300;
   font-size: 16px;
+  letter-spacing: 2px;
 }
 .newsletter-section button {
   font-weight: 500;
@@ -143,6 +154,7 @@ body {
 
 .site-footer {
   color: #ffffff;
+  letter-spacing: 2px;
 }
 .site-footer h5 {
   font-weight: 700;
@@ -152,6 +164,10 @@ body {
   font-size: 16px;
   text-transform: capitalize;
   color: #d9d9d9;
+}
+.site-footer p {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 992px) {
@@ -218,6 +234,9 @@ body {
     font-size: 16px;
   }
 }
+.slider-section {
+  height: 100vh;
+}
 .slider-section .slider-item {
   position: relative;
 }
@@ -239,6 +258,9 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+.slider-section .slider-item .shop-btn a:hover {
+  animation: none;
+}
 .slider-section .swiper-pagination-bullet-active {
   background: #ffffff !important;
 }
@@ -259,16 +281,23 @@ body {
      object-fit: cover;
   transition: 0.2s ease-in-out;
 }
+.product-item .discount-box {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  background-color: #000000;
+  padding: 3px 12px;
+}
 .product-item .product-details {
   position: relative;
 }
 .product-item .product-details .product-name {
   margin-bottom: 5px;
 }
-.product-item .wishlist {
+.product-item .product-details .wishlist {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   width: 36px;
   height: 36px;
   display: flex;
@@ -277,10 +306,10 @@ body {
   background-color: #ffffff;
   border-radius: 50%;
   border: none;
-  box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
+  box-shadow: 0px 0px 26px -5px rgba(111, 104, 104, 0.75);
   opacity: 0;
   visibility: hidden;
-  z-index: 9;
+  z-index: 5;
   transition: 0.2s ease-in;
 }
 .product-item:hover #img1 {
@@ -292,10 +321,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .product-item .wishlist {
-    position: absolute;
-    top: 10px;
-    right: 17px;
+  .product-item .product-details .wishlist {
     opacity: 1;
     visibility: visible;
   }
@@ -303,17 +329,6 @@ body {
 @media screen and (max-width: 768px) {
   .product-item .product-image {
     height: 300px;
-  }
-  .product-item .wishlist {
-    position: absolute;
-    top: 10px;
-    right: 17px;
-    width: 30px;
-    height: 30px;
-  }
-  .product-item .wishlist svg {
-    width: 14px;
-    height: 14px;
   }
 }
 .category-item {
@@ -411,7 +426,7 @@ body {
 }
 
 .sticky {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: black;
   animation: slideDown 0.35s ease-out;
 }
 @keyframes slideDown {
@@ -439,13 +454,13 @@ body {
   }
   .site-header .sidebarmenu {
     display: block;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     position: fixed;
-    top: 57px;
+    top: 0;
     left: -100%;
     background-color: #ffffff;
-    z-index: 2000;
+    z-index: 7;
     overflow-y: scroll;
     transition: 0.3s ease-in-out;
   }
@@ -455,11 +470,6 @@ body {
   }
   .site-header .active {
     left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .site-header .sidebarmenu {
-    width: 100%;
   }
 }
 .site-footer {
@@ -480,9 +490,10 @@ body {
 }
 .site-footer .footer-header .social-menu {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
-.site-footer .footer-header .social-links a {
+.site-footer .footer-header .social-menu a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -493,7 +504,7 @@ body {
   color: #ffffff;
   transition: all 0.3s ease;
 }
-.site-footer .footer-header .social-links a:hover {
+.site-footer .footer-header .social-menu a:hover {
   color: #000000;
   background-color: #ffffff;
 }
@@ -512,11 +523,8 @@ body {
   .site-footer .footer-header h5 {
     margin: 25px 0;
   }
-  .site-footer .footer-header .social-menu {
-    display: flex;
-    align-items: center;
+  .site-footer .social-menu {
     justify-content: center;
-    gap: 10px;
   }
 }
 .collection-section a {

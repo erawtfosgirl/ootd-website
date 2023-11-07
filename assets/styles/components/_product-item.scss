@@ -15,31 +15,37 @@
             transition: 0.2s ease-in-out;
         }
     }
+    .discount-box {
+        position: absolute;
+        top: 10px;
+        right: 17px;
+        background-color: $black;
 
+        padding: 3px 12px;
+    }
     .product-details {
         position: relative;
         .product-name {
             margin-bottom: 5px;
         }
-    }
-
-    .wishlist {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $white;
-        border-radius: 50%;
-        border: none;
-        box-shadow: 0px 8px 13px -6px rgba(162, 153, 153, 0.75);
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9;
-        transition: 0.2s ease-in;
+        .wishlist {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0px 0px 26px -5px rgba(111, 104, 104, 0.75);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 5;
+            transition: 0.2s ease-in;
+        }
     }
     &:hover {
         #img1 {
@@ -53,12 +59,11 @@
 }
 @media screen and (max-width: 992px) {
     .product-item {
-        .wishlist {
-            position: absolute;
-            top: 10px;
-            right: 17px;
-            opacity: 1;
-            visibility: visible;
+        .product-details {
+            .wishlist {
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 }
@@ -66,17 +71,6 @@
     .product-item {
         .product-image {
             height: 300px;
-        }
-        .wishlist {
-            position: absolute;
-            top: 10px;
-            right: 17px;
-            width: 30px;
-            height: 30px;
-            svg {
-                width: 14px;
-                height: 14px;
-            }
         }
     }
 }

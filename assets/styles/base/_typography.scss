@@ -3,10 +3,10 @@
 
 body {
     font-family: "Oswald", sans-serif;
-    letter-spacing: 1px;
 }
 .site-header {
-    font-weight: 500;
+    font-weight: 300;
+    letter-spacing: 3px;
     a {
         color: $white;
         font-size: 20px;
@@ -14,8 +14,7 @@ body {
     }
     .search {
         a {
-            font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -47,10 +46,16 @@ body {
 }
 .products-section {
     color: $black;
+    letter-spacing: 1px;
     .txt {
         font-weight: 300;
         font-size: 20px;
         color: $dark-gray;
+    }
+    .discount-box {
+        font-weight: 300;
+        color: $white;
+        font-size: 12px;
     }
     .product-details {
         text-align: center;
@@ -77,10 +82,12 @@ body {
 .collection-section {
     h1 {
         font-weight: 700;
+        letter-spacing: 1px;
         font-size: 3rem;
     }
     p {
         font-weight: 300;
+        letter-spacing: 1px;
         color: $dark-gray;
     }
     a {
@@ -95,10 +102,12 @@ body {
     text-transform: uppercase;
     p {
         font-size: 25px;
+        letter-spacing: 1px;
         color: $white;
     }
     h1 {
         font-size: 86px;
+        letter-spacing: 1px;
     }
     a {
         font-weight: 500;
@@ -108,6 +117,7 @@ body {
 }
 .newsletter-section {
     text-transform: uppercase;
+    letter-spacing: 1px;
     .title {
         font-weight: 700;
         font-size: 40px;
@@ -119,6 +129,7 @@ body {
     input[type="email"] {
         font-weight: 300;
         font-size: 16px;
+        letter-spacing: 2px;
     }
     button {
         font-weight: 500;
@@ -128,6 +139,7 @@ body {
 }
 .site-footer {
     color: $white;
+    letter-spacing: 2px;
     h5 {
         font-weight: 700;
     }
@@ -138,6 +150,10 @@ body {
             text-transform: capitalize;
             color: $gray;
         }
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 992px) {
@@ -230,7 +246,6 @@ body {
             font-size: 16px;
         }
     }
- 
 }
 // .search-section {
 //     input {

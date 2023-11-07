@@ -2,6 +2,7 @@
 @use "../utils/mixins" as *;
 
 .slider-section {
+    height: 100vh;
     .slider-item {
         position: relative;
         .slider-content {
@@ -12,7 +13,11 @@
         }
         .shop-btn {
             a {
-                @include main-btn($white,rgba(255, 255, 255, 0.1),$white,$black);
+                @include main-btn($white, rgba(255, 255, 255, 0.1), $white, $black);
+            
+                &:hover {
+                    animation: none;
+                }
             }
         }
     }
@@ -22,4 +27,5 @@
         background: $white !important;
     }
 }
+
 

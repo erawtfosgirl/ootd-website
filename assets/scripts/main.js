@@ -14,14 +14,12 @@ window.addEventListener("scroll", () => {
 /* Sidebar Menu */
 
 let hamburger = document.querySelector('.hamburger');
-let sidebarmenu = document.querySelector('.sidebarmenu');
+let exit = document.querySelector('.exit');
+let sidebar = document.querySelector('.sidebar');
 
 hamburger.addEventListener('click', () => {
-    let isActive = sidebarmenu.classList.contains('active');
-
-    if (!isActive) {
-        sidebarmenu.classList.add('active');
-    } else {
-        sidebarmenu.classList.remove('active');
-    }
+    sidebar.classList.add('active');
+})
+exit.addEventListener('click', () => {
+    sidebar.classList.remove('active');
 })

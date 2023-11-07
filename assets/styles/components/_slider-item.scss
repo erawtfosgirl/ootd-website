@@ -14,18 +14,11 @@
         .shop-btn {
             a {
                 @include main-btn($white, rgba(255, 255, 255, 0.1), $white, $black);
-            
+
                 &:hover {
                     animation: none;
                 }
             }
         }
     }
-
-    // Swiper Pagination CSS
-    .swiper-pagination-bullet-active {
-        background: $white !important;
-    }
 }
-
-

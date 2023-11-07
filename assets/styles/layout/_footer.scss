@@ -2,7 +2,7 @@
 .site-footer {
     background-color: $footer-bg;
 
-    .footer-header {
+    .footer-top {
         padding: 50px 0;
         h5 {
             margin-bottom: 25px;
@@ -39,7 +39,7 @@
         }
     }
 
-    .bottom-footer {
+    .footer-bottom {
         background-color: $black;
         padding: 20px 0;
         p {
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 992px) {
     .site-footer {
-        .footer-header {
+        .footer-top {
             text-align: center;
             h5 {
                 margin: 25px 0;

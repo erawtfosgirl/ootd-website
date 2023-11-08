@@ -13,8 +13,11 @@ body {
         letter-spacing: 3px;
     }
     .search {
-        a {
+        button {
+            color: $white;
             font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
     }
 }
@@ -52,6 +55,8 @@ body {
         font-size: 20px;
         color: $dark-gray;
     }
+}
+.product-item {
     .discount-box {
         font-weight: 300;
         color: $white;
@@ -155,6 +160,58 @@ body {
         font-size: 14px;
     }
 }
+.search-section {
+    input {
+        font-weight: 400;
+        font-size: 25px;
+        color: $black;
+        text-transform: capitalize;
+        &::placeholder {
+            color: $gray;
+            text-transform: uppercase;
+        }
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+    .top{
+        color: $white;
+        h5{
+            font-weight: 500;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        span{
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    .search-item {
+        .product-details {
+            text-align: center;
+            .product-name a {
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+                text-align: center;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .product-price {
+                font-size: 16px;
+            }
+            .price-regular {
+                font-weight: 600;
+            }
+            .price-old {
+                font-weight: 400;
+                color: $dark-gray;
+            }
+        }
+    }
+}
 @media screen and (max-width: 992px) {
     .site-header {
         .search {
@@ -175,7 +232,7 @@ body {
             letter-spacing: 5px;
         }
     }
-    .products-section {
+    .products-item {
         .product-details {
             .product-name a {
                 font-size: 18px;
@@ -200,9 +257,8 @@ body {
         }
     }
 }
-
 @media screen and (max-width: 768px) {
-    .products-section {
+    .product-item {
         .product-details {
             .product-name a {
                 font-size: 14px;
@@ -246,18 +302,3 @@ body {
         }
     }
 }
-// .search-section {
-//     input {
-//         font-family: $oswaldregular;
-//         font-size: 30px;
-//         color: $black;
-//         &::placeholder {
-//             color: $gray;
-//         }
-//         &:focus {
-//             &::placeholder {
-//                 color: transparent;
-//             }
-//         }
-//     }
-// }

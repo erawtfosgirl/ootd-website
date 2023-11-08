@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use '../utils/variables' as *;
 
 .search-section {
     position: fixed;
@@ -7,14 +7,22 @@
     height: 100vh;
     width: 100%;
     background-color: white;
-    z-index: 8;
-    padding-top: 5rem;
+    z-index: 9;
+    padding: 20px 0;
+    transition: 0.5s ease-in-out;
 
+    .exit-search {
+        img {
+            cursor: pointer;
+        }
+    }
     .search-bar {
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid black;
         svg {
+            width: 30;
+            height: 30;
             path {
-                stroke: $black;
+                stroke: black;
             }
         }
         input {
@@ -23,7 +31,6 @@
             border: none;
             padding: 10px 0;
         }
-
         input[type="search"]::-webkit-search-cancel-button {
             -webkit-appearance: none;
             height: 1em;
@@ -34,4 +41,20 @@
             cursor: pointer;
         }
     }
+    .search-products{
+        height: 60vh;
+        overflow-y: scroll;
+        border: 1px solid $gray;
+        .top{
+            padding: 10px;
+            background-color: $black;
+        }
+    }
+    .search-item{
+        border-bottom: 1px solid $gray;
+    }
+}
+
+.active-search-section {
+    top: 0;
 }

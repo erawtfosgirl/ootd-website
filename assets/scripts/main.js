@@ -42,15 +42,15 @@ allwishlist.forEach(item => {
 
 /* Open Search Section */
 
-// let body=document.querySelector('body');
 let searchBtn = document.querySelector('.search');
 let searchSection = document.querySelector('.search-section');
 let exitBtn = document.querySelector('.exit-search');
 
 searchBtn.addEventListener('click', () => {
     searchSection.classList.add('active-search-section');
-    // body.style.overflow='hidden';
 })
 exitBtn.addEventListener('click', () => {
     searchSection.classList.remove('active-search-section');
 })
+
+

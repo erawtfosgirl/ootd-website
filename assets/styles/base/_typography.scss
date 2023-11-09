@@ -176,16 +176,17 @@ body {
             }
         }
     }
-    .top{
+    .title {
         color: $white;
-        h5{
+        h5 {
             font-weight: 500;
             margin: 0;
             text-transform: uppercase;
         }
-        span{
+        a {
             font-weight: 400;
             font-size: 14px;
+            color: white;
         }
     }
     .search-item {
@@ -256,6 +257,27 @@ body {
             font-size: 56px;
         }
     }
+    .search-section {
+        input {
+            font-size: 16px;
+        }
+        .title {
+            h5 {
+                font-size: 16px;
+            }
+        }
+        .search-item {
+            .product-details {
+                .product-name a {
+                    font-size: 18px;
+                    
+                }
+                .product-price {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .product-item {
@@ -299,6 +321,26 @@ body {
         }
         button {
             font-size: 16px;
+        }
+    }
+    .search-section {
+        input {
+            font-size: 14px;
+        }
+        .title {
+            h5 {
+                font-size: 14px;
+            }
+        }
+        .search-item {
+            .product-details {
+                .product-name a {
+                    font-size: 14px; 
+                }
+                .product-price {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

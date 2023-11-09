@@ -108,7 +108,7 @@
             left: -100%;
             background-color: $white;
             z-index: 7;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             transition: 0.3s ease-in-out;
             .menu-list {
                 li {

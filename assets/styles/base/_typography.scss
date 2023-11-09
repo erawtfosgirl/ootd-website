@@ -62,6 +62,19 @@ body {
         color: $white;
         font-size: 12px;
     }
+    .product-image {
+        label {
+            font-weight: 300;
+            font-size: 14px;
+            color: black;
+        }
+        .addtocart {
+            font-weight: 300;
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
     .product-details {
         text-align: center;
         .product-name a {
@@ -270,7 +283,6 @@ body {
             .product-details {
                 .product-name a {
                     font-size: 18px;
-                    
                 }
                 .product-price {
                     font-size: 16px;
@@ -335,7 +347,7 @@ body {
         .search-item {
             .product-details {
                 .product-name a {
-                    font-size: 14px; 
+                    font-size: 14px;
                 }
                 .product-price {
                     font-size: 14px;

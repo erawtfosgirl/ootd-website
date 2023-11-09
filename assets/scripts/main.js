@@ -53,4 +53,21 @@ exitBtn.addEventListener('click', () => {
     searchSection.classList.remove('active-search-section');
 })
 
+/* Product Size */
+
+// let placeholder = document.querySelector('.placeholder-option');
+// let allItems = document.querySelectorAll('.size-item');
+// let sizeList = document.querySelector('.size-list');
+
+
+// allItems.forEach(item => {
+//     item.addEventListener('click', () => {
+//         console.log('salam');
+//         // placeholder.innerHTML = item.lastElementChild.innerHTML;
+
+//     })
+// })
+
+
+
 

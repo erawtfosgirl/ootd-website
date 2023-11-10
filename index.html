@@ -197,36 +197,36 @@
         </section>
 
         <section class="categories-section mt-5">
-            <div class="container swiper categorySwiper">
+            <div class="container">
                 <h2 class="mb-4 text-center">Shop by categories</h2>
-                <div class="swiper-wrapper">
-                    <div class="category-item swiper-slide">
+                <div class="owl-carousel owl-theme">
+                    <div class="category-item">
                         <a href="#">
-                            <img src="assets/images/categories/1165192303_1_1_1.jpg" alt="Image">
+                            <img class="img-fluid" src="assets/images/categories/1165192303_1_1_1.jpg" alt="Image">
                             <h3>Skirts</h3>
                         </a>
                     </div>
-                    <div class="category-item swiper-slide">
+                    <div class="category-item">
                         <a href="#">
-                            <img src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
+                            <img class="img-fluid" src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
                             <h3>Accessories</h3>
                         </a>
                     </div>
-                    <div class="category-item swiper-slide">
+                    <div class="category-item">
                         <a href="#">
-                            <img src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
+                            <img class="img-fluid" src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
                             <h3>Blazer</h3>
                         </a>
                     </div>
-                    <div class="category-item swiper-slide">
+                    <div class="category-item">
                         <a href="#">
-                            <img src="assets/images/categories/3009210303_2_1_1.jpg" alt="Image">
+                            <img class="img-fluid" src="assets/images/categories/3009210303_2_1_1.jpg" alt="Image">
                             <h3>Shoes</h3>
                         </a>
                     </div>
                     <div class="category-item swiper-slide">
                         <a href="#">
-                            <img src="assets/images/categories/8820321800_2_1_1.jpg" alt="Image">
+                            <img class="img-fluid" src="assets/images/categories/8820321800_2_1_1.jpg" alt="Image">
                             <h3>Dress</h3>
                         </a>
                     </div>
@@ -262,7 +262,7 @@
                                 </svg>
                             </button>
                             <span class="discount-box">-20%</span>
-                            <button class="col-6 addtocart">Add to cart</button>
+                            <button class="col-xl-8 col-lg-8 col-md-8 col-8 addtocart">Add to cart</button>
                         </div>
                         <div class="product-details mt-2">
                             <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
@@ -286,7 +286,7 @@
                                 </svg>
                             </button>
                             <span class="discount-box">-20%</span>
-                            <button class="col-6 addtocart">Add to cart</button>
+                            <button class="col-xl-8 col-lg-8 col-md-8 col-8 addtocart">Add to cart</button>
                         </div>
                         <div class="product-details mt-2">
                             <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
@@ -310,7 +310,7 @@
                                 </svg>
                             </button>
                             <span class="discount-box">-20%</span>
-                            <button class="col-6 addtocart">Add to cart</button>
+                            <button class="col-xl-8 col-lg-8 col-md-8 col-8 addtocart">Add to cart</button>
                         </div>
                         <div class="product-details mt-2">
                             <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
@@ -334,7 +334,7 @@
                                 </svg>
                             </button>
                             <span class="discount-box">-20%</span>
-                            <button class="col-6 addtocart">Add to cart</button>
+                            <button class="col-xl-8 col-lg-8 col-md-8 col-8 addtocart">Add to cart</button>
                         </div>
                         <div class="product-details mt-2">
                             <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
@@ -379,13 +379,13 @@
 
         <section class="newsletter-section mt-5">
             <div class="container h-100">
-                <div
+                <form
                     class="d-flex flex-column h-100 justify-content-center align-items-center gap-4 text-center newsletter-content">
                     <h1 class="title">THE MOST OOTD OF THE SEASON IT’S IN OUR NEWSLETTER!</h1>
                     <div class="subtitle">SUBSCRIBE TO OUR NEWSLETTER</div>
                     <input type="email" placeholder="E-mail" required>
                     <button type="button">I'M IN</button>
-                </div>
+            </form>
             </div>
         </section>
     </main>
@@ -476,6 +476,11 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Custom JS -->
     <script src="assets/scripts/main.js"></script>
 
@@ -485,7 +490,7 @@
             cssMode: true,
             direction: "horizontal",
             keyboard: true,
-            // loop: true,
+            loop: true,
             // autoplay: {
             //     delay: 2500,
             //     disableOnInteraction: false
@@ -499,32 +504,15 @@
                 clickable: true
             },
         });
-
-        var categorySwiper = new Swiper(".categorySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            keyboard: true,
-            // loop: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false
-            // },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                },
-            },
+    </script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            responsive: { 0: { items: 2 }, 600: { items: 3,margin:20 }, 1000: { items: 5,margin:20 } },
         });
-
     </script>
 </body>
 

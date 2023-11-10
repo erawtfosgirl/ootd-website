@@ -56,3 +56,13 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .product-item {
+        .wishlist {
+            svg{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@
             right: 10px;
             width: 36px;
             height: 36px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             background-color: white;
@@ -17,7 +17,7 @@
             border: none;
             opacity: 0;
             visibility: hidden;
-            transition: .3s linear;
+            transition: 0.3s ease-in-out;
             svg {
                 .active {
                     stroke: $red;
@@ -27,90 +27,22 @@
         }
         .discount-box {
             position: absolute;
-            top: 15px;
-            left: 15px;
+            top: 10px;
+            left: 10px;
             background-color: $black;
-            padding: 3px 12px;
+            padding: 5px 10px;
         }
-        .bottom {
-            width: 90%;
+        .addtocart {
             position: absolute;
-            bottom: 10px;
             left: 50%;
+            bottom: 10px;
             transform: translateX(-50%);
-            display: flex;
-            align-items: center;
+            background-color: black;
+            border: none;
+            padding: 5px 10px;
             opacity: 0;
             visibility: hidden;
-            transition: .3s linear;
-
-            .size-box {
-                width: 50%;
-                position: relative;
-                background-color: white;
-
-                .main {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 7px 10px;
-                    svg {
-                        width: 11px;
-                        height: 8px;
-                    }
-                }
-
-                .size-list {
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    width: 100%;
-                    background-color: white;
-                    border: 1px solid black;
-                    max-height: 0;
-                    visibility: hidden;
-                    overflow-y: hidden;
-
-                    .size-item {
-                        display: block;
-                        position: relative;
-                        padding: 7px 10px;
-                        cursor: pointer;
-                        &:hover {
-                            background-color: $gray;
-                            transition: all 0.1s linear;
-                        }
-                        input {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            opacity: 0;
-                        }
-                    }
-                }
-                &:hover {
-                    .size-list {
-                        visibility: visible;
-                        max-height: 200px;
-                        bottom: 0;
-                        transition: all 0.3s linear;
-                    }
-                }
-                label {
-                    cursor: pointer;
-                }
-            }
-
-            .action-box {
-                width: 50%;
-                .addtocart {
-                    width: 100%;
-                    background-color: black;
-                    border: none;
-                    padding: 7px 10px;
-                }
-            }
+            transition: 0.3s ease-in-out;
         }
     }
     &:hover {
@@ -118,7 +50,7 @@
             opacity: 1;
             visibility: visible;
         }
-        .bottom {
+        .addtocart {
             opacity: 1;
             visibility: visible;
         }

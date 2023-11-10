@@ -104,11 +104,6 @@ body {
   color: #ffffff;
   font-size: 12px;
 }
-.product-item .product-image label {
-  font-weight: 300;
-  font-size: 14px;
-  color: black;
-}
 .product-item .product-image .addtocart {
   font-weight: 300;
   font-size: 14px;
@@ -394,7 +389,7 @@ body {
   right: 10px;
   width: 36px;
   height: 36px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -402,7 +397,7 @@ body {
   border: none;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s linear;
+  transition: 0.3s ease-in-out;
 }
 .product-item .product-image .wishlist svg .active {
   stroke: #D64B59;
@@ -410,89 +405,28 @@ body {
 }
 .product-item .product-image .discount-box {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 10px;
+  left: 10px;
   background-color: #000000;
-  padding: 3px 12px;
+  padding: 5px 10px;
 }
-.product-item .product-image .bottom {
-  width: 90%;
+.product-item .product-image .addtocart {
   position: absolute;
-  bottom: 10px;
   left: 50%;
+  bottom: 10px;
   transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s linear;
-}
-.product-item .product-image .bottom .size-box {
-  width: 50%;
-  position: relative;
-  background-color: white;
-}
-.product-item .product-image .bottom .size-box .main {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7px 10px;
-}
-.product-item .product-image .bottom .size-box .main svg {
-  width: 11px;
-  height: 8px;
-}
-.product-item .product-image .bottom .size-box .size-list {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  border: 1px solid black;
-  max-height: 0;
-  visibility: hidden;
-  overflow-y: hidden;
-}
-.product-item .product-image .bottom .size-box .size-list .size-item {
-  display: block;
-  position: relative;
-  padding: 7px 10px;
-  cursor: pointer;
-}
-.product-item .product-image .bottom .size-box .size-list .size-item:hover {
-  background-color: #d9d9d9;
-  transition: all 0.1s linear;
-}
-.product-item .product-image .bottom .size-box .size-list .size-item input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-.product-item .product-image .bottom .size-box:hover .size-list {
-  visibility: visible;
-  max-height: 200px;
-  bottom: 0;
-  transition: all 0.3s linear;
-}
-.product-item .product-image .bottom .size-box label {
-  cursor: pointer;
-}
-.product-item .product-image .bottom .action-box {
-  width: 50%;
-}
-.product-item .product-image .bottom .action-box .addtocart {
-  width: 100%;
   background-color: black;
   border: none;
-  padding: 7px 10px;
+  padding: 5px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
 }
 .product-item:hover .wishlist {
   opacity: 1;
   visibility: visible;
 }
-.product-item:hover .bottom {
+.product-item:hover .addtocart {
   opacity: 1;
   visibility: visible;
 }

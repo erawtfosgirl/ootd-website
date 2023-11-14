@@ -279,7 +279,7 @@ body {
   margin-bottom: 30px;
 }
 .about .section-paragraph {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.1px;
   line-height: 26px;
@@ -344,6 +344,18 @@ body {
   }
   .search-section .search-item .product-details .product-price {
     font-size: 16px;
+  }
+  .about .section-title {
+    font-size: 18px;
+  }
+  .about .section-subtitle {
+    font-size: 26px;
+    letter-spacing: 2.75px;
+    line-height: 50px;
+  }
+  .about .section-description {
+    font-size: 22px;
+    line-height: 32px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -886,7 +898,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-position: center 0;
 }
 
 .concept-section .section-image {

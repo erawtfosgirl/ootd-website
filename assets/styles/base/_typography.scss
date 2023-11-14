@@ -221,6 +221,32 @@ body {
         }
     }
 }
+.concept-section {
+    .section-text {
+        .section-title {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 38px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .section-subtitle {
+            font-weight: 600;
+            font-size: 46px;
+            letter-spacing: 2.75px;
+            line-height: 70px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .section-paragraph {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0.1px;
+            line-height: 26px;
+            color: $dark-gray;
+        }
+    }
+}
 @media screen and (max-width: 992px) {
     .site-header {
         .search {

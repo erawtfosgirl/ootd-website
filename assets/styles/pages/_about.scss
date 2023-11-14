@@ -1,0 +1,24 @@
+.concept-section {
+    position: relative;
+    .section-text {
+        min-height: 100vh;
+        padding: 120px;
+        .section-paragraph {
+            max-width: 500px;
+        }
+    }
+    .section-image {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-image: url("/assets/images/about/company_01_01.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center 0;
+        margin-bottom: 0;
+    }
+}

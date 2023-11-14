@@ -263,6 +263,29 @@ body {
   color: #949494;
 }
 
+.concept-section .section-text .section-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.concept-section .section-text .section-subtitle {
+  font-weight: 600;
+  font-size: 46px;
+  letter-spacing: 2.75px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.concept-section .section-text .section-paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  color: #949494;
+}
+
 @media screen and (max-width: 992px) {
   .site-header .search a {
     font-weight: 300;
@@ -420,7 +443,7 @@ body {
   transform: translateX(-50%);
   background-color: black;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 10px;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease-in-out;
@@ -480,8 +503,18 @@ body {
   visibility: visible;
 }
 
+@media screen and (max-width: 992px) {
+  .category-item a:after {
+    opacity: 1;
+  }
+  .category-item h3 {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .site-header {
   position: fixed;
+  top: 0;
   width: 100%;
   padding: 20px 0;
   background-color: transparent;
@@ -809,4 +842,28 @@ body {
   .newsletter-section .title {
     max-width: 85%;
   }
+}
+.concept-section {
+  position: relative;
+}
+.concept-section .section-text {
+  min-height: 100vh;
+  padding: 120px;
+}
+.concept-section .section-text .section-paragraph {
+  max-width: 500px;
+}
+.concept-section .section-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-image: url("/assets/images/about/company_01_01.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center 0;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

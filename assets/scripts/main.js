@@ -1,15 +1,32 @@
 /* Sticky Header*/
+// Get the current page URL
+const currentPageURL = window.location.href;
+console.log(currentPageURL);
 
 let header = document.querySelector(".site-header");
 
-window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 250) {
+
+
+// Function to change header color based on URL
+function changeHeaderColor() {
+    // Check the URL and change header color accordingly
+    if (currentPageURL.includes('index')) {
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > 250) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+    } else if (currentPageURL.includes('about')) {
         header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
     }
-});
+}
+
+// Call the function when the page loads
+window.onload = changeHeaderColor;
+
 
 /* Sidebar Menu */
 

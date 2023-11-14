@@ -3,7 +3,7 @@
 @mixin main-btn($border-color,$bg-color,$bg-hover,$color) {
     background-color: $bg-color;
     display: inline-block;
-    padding: 3px 15px;
+    padding: 5px 15px;
     border: 1px solid $border-color;
     border-radius: 5px;
     transition: 0.3s ease-in-out;

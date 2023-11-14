@@ -60,14 +60,14 @@ allwishlist.forEach(item => {
 /* Open Search Section */
 
 let searchBtn = document.querySelector('.search');
-let searchSection = document.querySelector('.search-section');
+let searchArea = document.querySelector('.search-area');
 let exitBtn = document.querySelector('.exit-search');
 
 searchBtn.addEventListener('click', () => {
-    searchSection.classList.add('active-search-section');
+    searchArea.classList.add('active-search-area');
 })
 exitBtn.addEventListener('click', () => {
-    searchSection.classList.remove('active-search-section');
+    searchArea.classList.remove('active-search-area');
 })
 
 

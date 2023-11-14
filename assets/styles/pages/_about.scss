@@ -1,24 +1,60 @@
-.concept-section {
-    position: relative;
+@use "../utils/mixins" as *;
+
+.all-about-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.all-about-section {
+    // display: flex;
+    // justify-content: space-between;
+
     .section-text {
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         padding: 120px;
         .section-paragraph {
             max-width: 500px;
         }
     }
+    .section-grid-title {
+        margin-bottom: 10px;
+    }
     .section-image {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
-        background-image: url("/assets/images/about/company_01_01.jpg");
-        height: 100%;
+        min-height: 100px;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
         background-position: center 0;
-        margin-bottom: 0;
     }
 }
+.concept-section {
+    .section-image {
+        background-image: url("/assets/images/about/company_01_01.jpg");
+    }
+}
+.history-section {
+    .section-image {
+        background-image: url("/assets/images/about/company_01_02.jpg");
+    }
+}
+.collections-section {
+    .section-image {
+        background-image: url("/assets/images/about/company_01_03.jpg");
+    }
+}
+.numbers-section {
+    .section-image {
+        background-image: url("/assets/images/about/company_01_04.jpg");
+    }
+}
+.workwithus-section {
+    .section-image {
+        background-image: url("/assets/images/about/company_01_05.jpg");
+    }
+    a {
+        @include main-btn(black, white, black, white);
+    }
+}
+

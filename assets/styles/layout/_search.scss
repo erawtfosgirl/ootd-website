@@ -1,6 +1,6 @@
 @use '../utils/variables' as *;
 
-.search-section {
+.search-area {
     position: fixed;
     top: -100%;
     left: 0;
@@ -57,6 +57,6 @@
     }
 }
 
-.active-search-section {
+.active-search-area {
     top: 0;
 }

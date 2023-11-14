@@ -208,43 +208,43 @@ body {
   font-size: 14px;
 }
 
-.search-section input {
+.search-area input {
   font-weight: 400;
   font-size: 25px;
   color: #000000;
   text-transform: capitalize;
 }
-.search-section input::-moz-placeholder {
+.search-area input::-moz-placeholder {
   color: #d9d9d9;
   text-transform: uppercase;
 }
-.search-section input::placeholder {
+.search-area input::placeholder {
   color: #d9d9d9;
   text-transform: uppercase;
 }
-.search-section input:focus::-moz-placeholder {
+.search-area input:focus::-moz-placeholder {
   color: transparent;
 }
-.search-section input:focus::placeholder {
+.search-area input:focus::placeholder {
   color: transparent;
 }
-.search-section .title {
+.search-area .title {
   color: #ffffff;
 }
-.search-section .title h5 {
+.search-area .title h5 {
   font-weight: 500;
   margin: 0;
   text-transform: uppercase;
 }
-.search-section .title a {
+.search-area .title a {
   font-weight: 400;
   font-size: 14px;
   color: white;
 }
-.search-section .search-item .product-details {
+.search-area .search-item .product-details {
   text-align: center;
 }
-.search-section .search-item .product-details .product-name a {
+.search-area .search-item .product-details .product-name a {
   font-weight: 400;
   font-size: 18px;
   color: #000000;
@@ -252,25 +252,25 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.search-section .search-item .product-details .product-price {
+.search-area .search-item .product-details .product-price {
   font-size: 16px;
 }
-.search-section .search-item .product-details .price-regular {
+.search-area .search-item .product-details .price-regular {
   font-weight: 600;
 }
-.search-section .search-item .product-details .price-old {
+.search-area .search-item .product-details .price-old {
   font-weight: 400;
   color: #949494;
 }
 
-.concept-section .section-text .section-title {
+.about .section-title {
   font-weight: 400;
   font-size: 22px;
   line-height: 38px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-.concept-section .section-text .section-subtitle {
+.about .section-subtitle {
   font-weight: 600;
   font-size: 46px;
   letter-spacing: 2.75px;
@@ -278,12 +278,31 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.concept-section .section-text .section-paragraph {
+.about .section-paragraph {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.1px;
   line-height: 26px;
   color: #949494;
+}
+.about .section-description {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  line-height: 42px;
+  color: #949494;
+}
+.about .section-grid-title {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.about a {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
 }
 
 @media screen and (max-width: 992px) {
@@ -393,7 +412,7 @@ body {
 .slider-section .slider-item .shop-btn a {
   background-color: rgba(255, 255, 255, 0.1);
   display: inline-block;
-  padding: 3px 15px;
+  padding: 5px 15px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
@@ -687,7 +706,7 @@ body {
     justify-content: center;
   }
 }
-.search-section {
+.search-area {
   position: fixed;
   top: -100%;
   left: 0;
@@ -698,27 +717,27 @@ body {
   padding: 20px 0;
   transition: 0.5s ease-in-out;
 }
-.search-section .exit-search img {
+.search-area .exit-search img {
   cursor: pointer;
 }
-.search-section .search-bar {
+.search-area .search-bar {
   border-bottom: 1px solid black;
 }
-.search-section .search-bar svg {
+.search-area .search-bar svg {
   width: 30;
   height: 30;
 }
-.search-section .search-bar svg path {
+.search-area .search-bar svg path {
   stroke: black;
 }
-.search-section .search-bar input {
+.search-area .search-bar input {
   width: 100%;
   outline: none;
   border: none;
   padding: 10px 0;
   background-color: transparent;
 }
-.search-section .search-bar input[type=search]::-webkit-search-cancel-button {
+.search-area .search-bar input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 1em;
   width: 1em;
@@ -727,28 +746,28 @@ body {
   opacity: 1;
   cursor: pointer;
 }
-.search-section .search-products {
+.search-area .search-products {
   height: 60vh;
   background-color: white;
   overflow-y: scroll;
   border: 1px solid #d9d9d9;
 }
-.search-section .search-products .title {
+.search-area .search-products .title {
   padding: 10px;
   background-color: #000000;
 }
-.search-section .search-item {
+.search-area .search-item {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.active-search-section {
+.active-search-area {
   top: 0;
 }
 
 .collection-section a {
   background-color: #ffffff;
   display: inline-block;
-  padding: 3px 15px;
+  padding: 5px 15px;
   border: 1px solid #000000;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
@@ -781,7 +800,7 @@ body {
 .information-section .content a {
   background-color: transparent;
   display: inline-block;
-  padding: 3px 15px;
+  padding: 5px 15px;
   border: 1px solid #000000;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
@@ -843,27 +862,60 @@ body {
     max-width: 85%;
   }
 }
-.concept-section {
-  position: relative;
+.all-about-section:nth-child(even) {
+  flex-direction: row-reverse;
 }
-.concept-section .section-text {
+
+.all-about-section .section-text {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 120px;
 }
-.concept-section .section-text .section-paragraph {
+.all-about-section .section-text .section-paragraph {
   max-width: 500px;
 }
-.concept-section .section-image {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  background-image: url("/assets/images/about/company_01_01.jpg");
-  height: 100%;
+.all-about-section .section-grid-title {
+  margin-bottom: 10px;
+}
+.all-about-section .section-image {
+  min-height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-position: center 0;
-  margin-bottom: 0;
+}
+
+.concept-section .section-image {
+  background-image: url("/assets/images/about/company_01_01.jpg");
+}
+
+.history-section .section-image {
+  background-image: url("/assets/images/about/company_01_02.jpg");
+}
+
+.collections-section .section-image {
+  background-image: url("/assets/images/about/company_01_03.jpg");
+}
+
+.numbers-section .section-image {
+  background-image: url("/assets/images/about/company_01_04.jpg");
+}
+
+.workwithus-section .section-image {
+  background-image: url("/assets/images/about/company_01_05.jpg");
+}
+.workwithus-section a {
+  background-color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+.workwithus-section a:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

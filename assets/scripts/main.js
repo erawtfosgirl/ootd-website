@@ -19,7 +19,7 @@ function changeHeaderColor() {
                 header.classList.remove("sticky");
             }
         });
-    } else if (currentPageURL.includes('about')) {
+    } else {
         header.classList.add("sticky");
     }
 }

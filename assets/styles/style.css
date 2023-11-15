@@ -305,6 +305,18 @@ body {
   color: black;
 }
 
+.contact-section h1 {
+  font-family: 700;
+  letter-spacing: 1px;
+}
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 992px) {
   .site-header .search a {
     font-weight: 300;
@@ -946,4 +958,30 @@ body {
   .all-about-section .section-image {
     min-height: 50vh;
   }
+}
+.contact-section {
+  padding: 8rem 0;
+}
+.contact-section h1 {
+  margin-bottom: 20px;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section form input,
+.contact-section form textarea {
+  border: 1px solid black;
+  outline: none;
+  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.contact-section form button {
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+  padding: 15px 0;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

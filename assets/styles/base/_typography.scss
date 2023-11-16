@@ -278,16 +278,20 @@ body {
 }
 .faq-section{
     color: white;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     h1{
-        color:black;
+        color: black;
     }
     h5{
         text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
     }
     p{
-        font-weight: 300;
+        font-weight: 200;
         line-height: normal;
+        text-align: center;
+        color: $gray;
     }
  
 }

@@ -70,6 +70,31 @@ exitBtn.addEventListener('click', () => {
     searchArea.classList.remove('active-search-area');
 })
 
+/* FAQ items*/
 
+// let questions = document.querySelectorAll('.question');
 
+// questions.forEach(question => {
+//     question.addEventListener('click', () => {
+//         let response = question.nextElementSibling;
+//         let isActive = response.classList.contains('active');
+
+//         // Close all responses
+//         questions.forEach(item => {
+//             if (item !== question) {
+//                 let otherResponse = item.nextElementSibling;
+//                 otherResponse.classList.remove('active');
+//             }
+//         });
+
+//         // Toggle active class for the clicked item
+//         if (!isActive) {
+//             response.classList.add('active');
+//         } else {
+//             response.classList.remove('active');
+//         }
+
+//     })
+
+// })
 

@@ -5,7 +5,20 @@
         position: relative;
         border-radius: 5px;
         overflow: hidden;
-
+        a {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.2);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s ease-in-out;
+            }
+        }
         .wishlist {
             position: absolute;
             top: 10px;
@@ -28,7 +41,7 @@
                     color: $red;
                 }
             }
-            .hidden{
+            .hidden {
                 display: none;
             }
         }
@@ -57,11 +70,17 @@
         }
     }
     &:hover {
+        a{
+            &:after{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
         .wishlist {
             opacity: 1;
             visibility: visible;
         }
-        .discount-box{
+        .discount-box {
             opacity: 0;
             visibility: hidden;
         }

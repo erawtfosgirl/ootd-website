@@ -486,6 +486,12 @@ body {
 .product-item .product-image .wishlist i {
   font-size: 18px;
 }
+.product-item .product-image .wishlist i:last-child {
+  color: #D64B59;
+}
+.product-item .product-image .wishlist .hidden {
+  display: none;
+}
 .product-item .product-image .remove svg {
   width: 20px;
   height: 20px;
@@ -510,6 +516,10 @@ body {
 .product-item:hover .wishlist {
   opacity: 1;
   visibility: visible;
+}
+.product-item:hover .discount-box {
+  opacity: 0;
+  visibility: hidden;
 }
 .product-item:hover .addtocart {
   opacity: 1;

@@ -37,14 +37,11 @@ exit.addEventListener('click', () => {
 let allwishlist = document.querySelectorAll('.wishlist');
 allwishlist.forEach(item => {
     item.addEventListener('click', () => {
-        let path = item.firstElementChild.firstElementChild;
-        let isActive = path.classList.contains('active');
-        if (!isActive) {
-            path.classList.add('active');
-        } else {
-            path.classList.remove('active');
-        }
+        let firstIcon = item.firstElementChild;
+        let secondIcon = item.lastElementChild;
 
+        firstIcon.classList.toggle('hidden');
+        secondIcon.classList.toggle('hidden');
     })
 })
 

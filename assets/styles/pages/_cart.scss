@@ -1,0 +1,56 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.cart-products-section {
+    padding: 7rem 0;
+    .title button {
+        @include main-btn($black, $white, $black, $white);
+    }
+    .all {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 400px;
+        overflow-y: scroll;
+        border: 1px solid $gray;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $gray;
+    }
+    .cart-item {
+        padding: 10px;
+
+        &:not(:nth-last-child(1)) {
+            border-bottom: 1px solid $gray;
+        }
+        &:nth-child(odd) {
+            border-right: 1px solid $gray;
+        }
+        button {
+            border: 0;
+            background-color: transparent;
+            i {
+                font-size: 14px;
+            }
+        }
+        .product-quantity {
+            border: 1px solid $gray;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 10px;
+            input {
+                width: 50%;
+                background-color: transparent;
+                text-align: center;
+                outline: none;
+                border: none;
+            }
+        }
+        .product-action {
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}

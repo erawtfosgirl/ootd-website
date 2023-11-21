@@ -276,18 +276,46 @@ body {
         letter-spacing: 1px;
     }
 }
-.faq-section{
-text-align: center;  
-    h5{
+.faq-section {
+    text-align: center;
+    h5 {
         text-transform: uppercase;
         font-weight: 400;
-        font-size: 20px
+        font-size: 20px;
     }
-    p{
+    p {
         font-weight: 300;
         font-size: 16px;
     }
- 
+}
+.cart-products-section {
+    .cart-item {
+        .top {
+            span {
+                font-weight: 600;
+            }
+        }
+        .middle {
+            span {
+                font-size: 14px;
+                &:nth-child(1) {
+                    font-weight: 500;
+                    letter-spacing: 0.08em;
+                }
+
+                &:nth-child(2) {
+                    font-weight: 400;
+                    letter-spacing: 0.08em;
+                }
+            }
+        }
+        .bottom {
+            input {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -435,6 +463,15 @@ text-align: center;
                 .product-price {
                     font-size: 14px;
                 }
+            }
+        }
+    }
+    .cart-products-section {
+        .cart-item {
+            .top {
+               h5{
+                font-size: 16px;
+               }
             }
         }
     }

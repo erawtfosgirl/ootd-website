@@ -1,3 +1,9 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
 .wishlist-products-section{
     padding: 7rem 0;
+    .title button{
+        @include main-btn($black, $white, $black, $white);
+    }
 }

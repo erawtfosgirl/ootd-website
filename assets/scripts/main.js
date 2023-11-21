@@ -39,7 +39,7 @@ allwishlist.forEach(item => {
     item.addEventListener('click', () => {
         let firstIcon = item.firstElementChild;
         let secondIcon = item.lastElementChild;
-
+        console.log(firstIcon);
         firstIcon.classList.toggle('hidden');
         secondIcon.classList.toggle('hidden');
     })

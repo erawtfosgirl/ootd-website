@@ -318,6 +318,7 @@ body {
 
 .faq-section {
   text-align: center;
+  letter-spacing: 1px;
 }
 .faq-section h5 {
   text-transform: uppercase;
@@ -1061,8 +1062,8 @@ body {
   border: 1px solid black;
   outline: none;
   margin-bottom: 10px;
-  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
   padding: 10px;
+  border-radius: 5px;
 }
 .contact-section form button {
   margin-top: 20px;
@@ -1071,6 +1072,7 @@ body {
   padding: 15px 0;
   border: none;
   color: white;
+  border-radius: 5px;
 }
 
 .faq-section {
@@ -1081,7 +1083,8 @@ body {
 }
 .faq-section .faq-item {
   padding: 30px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-bottom: 1px solid black;
+  margin: 0;
 }
 .faq-section .faq-item h5 {
   cursor: pointer;

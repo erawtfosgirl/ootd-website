@@ -316,6 +316,25 @@ body {
             }
         }
     }
+    .right{
+        span{
+            letter-spacing: 1px;
+            &:nth-child(odd){
+                font-weight: 600;
+                font-size: 18px;
+            }
+            &:nth-child(even){
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+        a{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size:18px ;
+            letter-spacing: 1px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {

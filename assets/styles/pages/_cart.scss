@@ -6,45 +6,71 @@
     .title button {
         @include main-btn($black, $white, $black, $white);
     }
-    .all {
-        max-height: 450px;
-        overflow-y: scroll;
-        border: 1px solid $gray;
-    }
     ::-webkit-scrollbar-thumb {
         background: $gray;
     }
-    .cart-item {
-        &:not(:last-child) {
-            border-bottom: 1px solid $gray;
-        }
-        button {
-            border: 0;
-            background-color: transparent;
-            i {
-                font-size: 14px;
+    .left {
+        max-height: 450px;
+        overflow-y: scroll;
+        border: 1px solid $gray;
+        .cart-item {
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray;
             }
-        }
-        .product-quantity {
-            border: 1px solid $gray;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5px 10px;
-            input {
-                width: 50%;
+            button {
+                border: 0;
                 background-color: transparent;
-                text-align: center;
-                outline: none;
-                border: none;
-                pointer-events: none;
+                i {
+                    font-size: 14px;
+                }
+            }
+            .product-quantity {
+                border: 1px solid $gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 10px;
+                input {
+                    width: 50%;
+                    background-color: transparent;
+                    text-align: center;
+                    outline: none;
+                    border: none;
+                    pointer-events: none;
+                }
+            }
+            .product-action {
+                i {
+                    font-size: 20px;
+                }
             }
         }
-        .product-action {
-            i {
-                font-size: 20px;
+    }
+    .right {
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                &:last-child {
+                    padding-top: 20px;
+                    border-top: 1px solid $gray;
+                    border-bottom: 1px solid $gray;
+                }
             }
         }
+        a {
+            @include main-btn($black, $footer-bg, $black, $white);
+            color: white;
+            padding: 12px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cart-products-section{
+        padding: 5rem 0;
     }
 }

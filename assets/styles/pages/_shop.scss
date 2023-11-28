@@ -25,12 +25,12 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: 20%;
-        max-height: 100vh;
+        width: 25%;
+        height: 100vh;
         background-color: white;
         z-index: 999999;
         overflow-y: scroll;
-        transition: 0.6s ease-in-out;
+        transition: 0.5s ease-in-out;
         
 
         .filter-container {
@@ -173,5 +173,31 @@
     }
     .active{
         left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .shop-products-section{
+        .title{
+            .options{
+                width: 30%;
+            }
+        }
+        .filter-menu{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .shop-products-section{
+        .title{
+            .options{
+                width: 50%;
+            }
+        }
+        .filter-menu{
+            width: 100%;
+        }
     }
 }

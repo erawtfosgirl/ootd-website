@@ -337,7 +337,18 @@ body {
         }
     }
 }
-
+.shop-products-section{
+    .filter-menu{
+        h5{
+            font-weight: 600;
+        }
+        .item a{
+            font-size: 16px;
+            font-weight: 400;
+            color: $dark-gray;
+        }
+    }
+}
 @media screen and (max-width: 992px) {
     .site-header {
         .search {

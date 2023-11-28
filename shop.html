@@ -169,85 +169,17 @@
 
     <main>
 
-        <section class="slider-section swiper bannerSwiper">
-            <div class="slider-wrapper swiper-wrapper">
-                <div class="slider-item swiper-slide">
-                    <img class="d-block h-100 w-100 object-fit-cover" src="assets/images/3597100832_9_1_1.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>NEW IN</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item swiper-slide">
-                    <img class="h-100 w-100 object-fit-cover"
-                        src="assets/images/IMAGE-landscape-fill-8cae5d8e-4358-4149-9e4c-38b89b6c01e3-default_0.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>JEANS</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next banner-next banner-btn"></div>
-            <div class="swiper-button-prev banner-prev banner-btn"></div>
-            <div class="swiper-pagination"></div>
-        </section>
-
-        <section class="categories-section mt-5">
+        <section class="shop-products-section my-5">
             <div class="container">
-                <h2 class="mb-4 text-center">Shop by categories</h2>
-                <div class="owl-carousel owl-theme">
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1165192303_1_1_1.jpg" alt="Image">
-                            <h3>Skirts</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
-                            <h3>Accessories</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
-                            <h3>Blazer</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/3009210303_2_1_1.jpg" alt="Image">
-                            <h3>Shoes</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8820321800_2_1_1.jpg" alt="Image">
-                            <h3>Dress</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            <h3>Bags</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="products-section mt-5">
-            <div class="container">
-                <div class="title mb-4 text-center">
-                    <h2>Trending</h2>
-                    <div class="txt">Top view in this week</div>
+                <div class="title mb-4 d-flex justify-content-between align-items-center">
+                    <button class="shopfilter-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <select class="form-select options" aria-label="Default select example">
+                        <option selected value="1">Sort by Position</option>
+                        <option value="2">Sort by Price</option>
+                        <option value="3">Sort by Product Name</option>
+                    </select>
                 </div>
                 <div class="row g-3">
                     <div class="col-lg-3 col-md-4 col-6 product-item">
@@ -336,48 +268,140 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="collection-section mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <img class="img-fluid" src="assets/images/7950939625_9_1_1.jpg" alt="Image">
+            <div class="filter-menu">
+                <div class="filter-container">
+                    <div class="closefiltermenu text-end">
+                        <img src="assets/icons/reset.svg" alt="Icon">
                     </div>
-                    <div class="col-lg-6 col-12 p-3 collection-content">
-                        <h1>Extra 10% off on summer collection</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Recusandae commodi tempora, aut omnis maiores rem numquam id perferendis delectus
-                            quos, deleniti temporibus saepe animi facilis incidunt, non doloremque esse soluta!
-                        </p>
-                        <a href="#shop">Shop Now</a>
+                    <div class="filter-options d-flex flex-column gap-4">
+                        <div class="filter-option-item">
+                            <h5 class="filter-options-title">Category</h5>
+                            <div class="filter-options-content">
+                                <ul class="items">
+                                    <li class="item">
+                                        <a href="#">
+                                            Skirts
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">
+                                            Blazer
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">
+                                            Dress
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">
+                                            Shoes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-option-item">
+                            <h5 class="filter-options-title">Price</h5>
+                            <div class="filter-options-content">
+                                <div class="price-input">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" value="7500">
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-option-item">
+                            <h5 class="filter-options-title">Color</h5>
+                            <div class="filter-options-content">
+                                <div class="filter-colors">
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: aqua;"></div>
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: rgb(204, 255, 0);"></div>
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: rgb(186, 60, 165);">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: rgb(130, 135, 135);">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: rgb(0, 0, 0);"></div>
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a href="#">
+                                            <div class="color-option" style="background-color: rgb(123, 198, 85);">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-option-item">
+                            <h5 class="filter-options-title">Size</h5>
+                            <div class="filter-options-content">
+                                <div class="filter-sizes">
+                                    <div class="size-item">
+                                        <a href="#">
+                                            <div class="size-option">XS</div>
+                                        </a>
+                                    </div>
+                                    <div class="size-item">
+                                        <a href="#">
+                                            <div class="size-option">S</div>
+                                        </a>
+                                    </div>
+                                    <div class="size-item">
+                                        <a href="#">
+                                            <div class="size-option">M</div>
+                                        </a>
+                                    </div>
+                                    <div class="size-item">
+                                        <a href="#">
+                                            <div class="size-option">L</div>
+                                        </a>
+                                    </div>
+                                    <div class="size-item">
+                                        <a href="#">
+                                            <div class="size-option">XL</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="information-section mt-5">
-            <div class="container">
-                <div class="content text-center">
-                    <p>JUST LAUNCHED</p>
-                    <h1>FREE EXPRESS SHIPPING</h1>
-                    <a href="#shop">Shop Now</a>
-                </div>
             </div>
         </section>
 
-        <section class="newsletter-section mt-5">
-            <div class="container h-100">
-                <form
-                    class="d-flex flex-column h-100 justify-content-center align-items-center gap-4 text-center newsletter-content">
-                    <h1 class="title">THE MOST OOTD OF THE SEASON IT’S IN OUR NEWSLETTER!</h1>
-                    <div class="subtitle">SUBSCRIBE TO OUR NEWSLETTER</div>
-                    <input type="email" placeholder="E-mail" required>
-                    <button type="button">I'M IN</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer">

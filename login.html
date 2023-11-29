@@ -74,7 +74,7 @@
                         </a>
                     </div>
                     <div class="user">
-                        <a href="login.html">
+                        <a href="#login">
                             <img src="assets/icons/user.svg" alt="Cart Icon">
                         </a>
                     </div>
@@ -169,215 +169,67 @@
 
     <main>
 
-        <section class="slider-section swiper bannerSwiper">
-            <div class="slider-wrapper swiper-wrapper">
-                <div class="slider-item swiper-slide">
-                    <img class="d-block h-100 w-100 object-fit-cover" src="assets/images/3597100832_9_1_1.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>NEW IN</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item swiper-slide">
-                    <img class="h-100 w-100 object-fit-cover"
-                        src="assets/images/IMAGE-landscape-fill-8cae5d8e-4358-4149-9e4c-38b89b6c01e3-default_0.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>JEANS</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next banner-next banner-btn"></div>
-            <div class="swiper-button-prev banner-prev banner-btn"></div>
-            <div class="swiper-pagination"></div>
-        </section>
-
-        <section class="categories-section mt-5">
+        <section class="login-section">
             <div class="container">
-                <h2 class="mb-4 text-center">Shop by categories</h2>
-                <div class="owl-carousel owl-theme">
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1165192303_1_1_1.jpg" alt="Image">
-                            <h3>Skirts</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
-                            <h3>Accessories</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
-                            <h3>Blazer</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/3009210303_2_1_1.jpg" alt="Image">
-                            <h3>Shoes</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8820321800_2_1_1.jpg" alt="Image">
-                            <h3>Dress</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            <h3>Bags</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <div class="row d-flex justify-content-center">
 
-        </section>
+                    <h1>Welcome back</h1>
+                    <p class="headertxt">
+                        Please enter your detail and find your look
+                    </p>
+                    <form method="post" action="" class="col-lg-6 col-12">
+                        <label for="emaillogin">Email</label>
+                        <input id="emaillogin" class="textinp col-12 col-lg-12" required type="text"
+                            placeholder="Enter your email address">
+                        <label for="password">Password</label>
+                        <div class="passwordbox col-12 col-lg-12">
+                            <input placeholder="Enter your password" id="password" class="textinp col-12 col-lg-12"
+                                required type="password">
 
-        <section class="products-section mt-5">
-            <div class="container">
-                <div class="title mb-4 text-center">
-                    <h2>Trending</h2>
-                    <div class="txt">Top view in this week</div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
+                            <svg class="eyeicon open" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                                    stroke="#101623" stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+
+                            <svg class="eyeicon closed" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.7148 9.94531L17.4969 13.0319" stroke="#101623" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0449 11.6611L12.6007 14.813" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.94843 11.6592L7.39258 14.8116" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.28279 9.94336L2.49219 13.0448" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2.5 8.19336C3.81348 9.81918 6.22141 11.875 10 11.875C13.7787 11.875 16.1866 9.81919 17.5001 8.19338"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
                         </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
+                        <div class="col-lg-12 col-12 d-flex justify-content-between">
+                            <div class="col-lg-6 col-6 remembermebox">
+                                <input type="checkbox" id="rememberme">
+                                <label for="rememberme">Remember me</label>
+                            </div>
+                            <div class="col-lg-6 col-6 text-end">
+                                <a href="#" class="forgotpassword">
+                                    Forgot your password?
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
+                        <button type="submit" class="loginbtn col-lg-12 col-12">SIGN IN</button>
+
+                        <div class="col-lg-12 col-12 bottom text-center">Don't have account yet ? <a
+                                href="register.html" class="registerhere">Register here</a></div>
+
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section class="collection-section mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <img class="img-fluid" src="assets/images/7950939625_9_1_1.jpg" alt="Image">
-                    </div>
-                    <div class="col-lg-6 col-12 p-3 collection-content">
-                        <h1>Extra 10% off on summer collection</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Recusandae commodi tempora, aut omnis maiores rem numquam id perferendis delectus
-                            quos, deleniti temporibus saepe animi facilis incidunt, non doloremque esse soluta!
-                        </p>
-                        <a href="#shop">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="information-section mt-5">
-            <div class="container">
-                <div class="content text-center">
-                    <p>JUST LAUNCHED</p>
-                    <h1>FREE EXPRESS SHIPPING</h1>
-                    <a href="#shop">Shop Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="newsletter-section mt-5">
-            <div class="container h-100">
-                <form
-                    class="d-flex flex-column h-100 justify-content-center align-items-center gap-4 text-center newsletter-content">
-                    <h1 class="title">THE MOST OOTD OF THE SEASON IT’S IN OUR NEWSLETTER!</h1>
-                    <div class="subtitle">SUBSCRIBE TO OUR NEWSLETTER</div>
-                    <input type="email" placeholder="E-mail" required>
-                    <button type="button">I'M IN</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer">

@@ -5,7 +5,7 @@ let header = document.querySelector(".site-header");
 
 
 // Check the URL and change header color accordingly
-if (currentPageURL.includes('index')) {
+if (currentPageURL.includes('index') ) {
     window.addEventListener("scroll", () => {
         const currentScroll = window.scrollY;
         if (currentScroll > 250) {

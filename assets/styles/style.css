@@ -375,6 +375,33 @@ body {
   color: #949494;
 }
 
+.login-section .headertxt {
+  color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+.login-section form label {
+  font-weight: 600;
+}
+.login-section form input {
+  font-weight: 400;
+  font-size: 16px;
+}
+.login-section form button {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.login-section form .forgotpassword {
+  color: black;
+}
+.login-section form .bottom {
+  color: gray;
+}
+.login-section form .registerhere {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 992px) {
   .site-header .search a {
     font-weight: 300;
@@ -711,7 +738,7 @@ body {
 }
 
 .sticky {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #101010;
   padding: 10px 0;
   animation: slideDown 0.35s ease-out;
 }
@@ -1394,4 +1421,53 @@ body {
   .shop-products-section .filter-menu {
     width: 100%;
   }
+}
+.login-section {
+  padding: 7rem 0;
+}
+.login-section h1,
+.login-section p {
+  text-align: center;
+}
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+.login-section form .passwordbox {
+  position: relative;
+}
+.login-section form .passwordbox .eyeicon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.login-section form .passwordbox .open {
+  display: none;
+}
+.login-section form .passwordbox .closed {
+  display: block;
+}
+.login-section form .remembermebox input {
+  margin-right: 5px;
+  accent-color: black;
+}
+.login-section form .textinp {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.login-section form .loginbtn {
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+  padding: 15px 0;
+  border: none;
+  color: white;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

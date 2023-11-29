@@ -67,7 +67,8 @@
     }
 }
 .sticky {
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
+    background-color: $footer-bg;
     padding: 10px 0;
     animation: slideDown 0.35s ease-out;
 

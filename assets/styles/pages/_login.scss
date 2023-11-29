@@ -1,0 +1,55 @@
+.login-section {
+    padding: 7rem 0;
+
+    h1,
+    p {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+
+        .passwordbox{
+            position: relative;
+            .eyeicon{
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+            .open{
+                display: none;
+            }
+            .closed{
+                display: block;
+            }
+        }
+
+        .remembermebox {
+            input {
+                margin-right: 5px;
+                accent-color: black;
+            }
+        }
+
+        .textinp {
+            border: 1px solid black;
+            outline: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .loginbtn {
+            margin-top: 20px;
+            background-color: black;
+            text-align: center;
+            padding: 15px 0;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

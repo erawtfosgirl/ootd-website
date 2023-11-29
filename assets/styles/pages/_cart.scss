@@ -11,7 +11,7 @@
     }
     .left {
         max-height: 450px;
-        overflow-y: scroll;
+        overflow: auto;
         border: 1px solid $gray;
         .cart-item {
             &:not(:last-child) {

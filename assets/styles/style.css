@@ -1149,7 +1149,7 @@ body {
 }
 .cart-products-section .left {
   max-height: 450px;
-  overflow-y: scroll;
+  overflow: auto;
   border: 1px solid #d9d9d9;
 }
 .cart-products-section .left .cart-item:not(:last-child) {
@@ -1236,13 +1236,14 @@ body {
 .shop-products-section .filter-menu {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 25%;
   height: 100vh;
   background-color: white;
   z-index: 999999;
-  overflow-y: scroll;
-  transition: 0.5s ease-in-out;
+  overflow-y: auto;
+  transition: 0.5s ease translate;
+  translate: -100% 0;
 }
 .shop-products-section .filter-menu .filter-container {
   padding: 20px;
@@ -1282,7 +1283,9 @@ body {
   border-radius: 5px;
   text-align: center;
   border: 1px solid #999;
-  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 .shop-products-section .filter-menu .filter-options .filter-option-item .filter-options-content input[type=number]::-webkit-outer-spin-button,
 .shop-products-section .filter-menu .filter-options .filter-option-item .filter-options-content input[type=number]::-webkit-inner-spin-button {
@@ -1320,7 +1323,8 @@ body {
   background: none;
   pointer-events: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .shop-products-section .filter-menu .filter-options .filter-option-item .filter-options-content input[type=range]::-webkit-slider-thumb {
   height: 17px;
@@ -1372,7 +1376,7 @@ body {
   border: 1px solid #d9d9d9;
 }
 .shop-products-section .active {
-  left: 0;
+  translate: 0 0;
 }
 
 @media screen and (max-width: 1024px) {

@@ -24,14 +24,14 @@
     .filter-menu {
         position: fixed;
         top: 0;
-        left: -100%;
+        left: 0;
         width: 25%;
         height: 100vh;
         background-color: white;
         z-index: 999999;
-        overflow-y: scroll;
-        transition: 0.5s ease-in-out;
-        
+        overflow-y: auto;
+        transition: 0.5s ease translate;
+        translate: -100% 0;
 
         .filter-container {
             padding: 20px;
@@ -74,7 +74,7 @@
                         border-radius: 5px;
                         text-align: center;
                         border: 1px solid #999;
-                        -moz-appearance: textfield;
+                        appearance: textfield;
                     }
                     input[type="number"]::-webkit-outer-spin-button,
                     input[type="number"]::-webkit-inner-spin-button {
@@ -111,8 +111,7 @@
                         top: -5px;
                         background: none;
                         pointer-events: none;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
+                        appearance: none;
                     }
                     input[type="range"]::-webkit-slider-thumb {
                         height: 17px;
@@ -171,32 +170,32 @@
             }
         }
     }
-    .active{
-        left: 0;
+    .active {
+        translate: 0 0;
     }
 }
 
-@media screen and (max-width: 1024px){
-    .shop-products-section{
-        .title{
-            .options{
+@media screen and (max-width: 1024px) {
+    .shop-products-section {
+        .title {
+            .options {
                 width: 30%;
             }
         }
-        .filter-menu{
+        .filter-menu {
             width: 50%;
         }
     }
 }
 
-@media screen and (max-width: 768px){
-    .shop-products-section{
-        .title{
-            .options{
+@media screen and (max-width: 768px) {
+    .shop-products-section {
+        .title {
+            .options {
                 width: 50%;
             }
         }
-        .filter-menu{
+        .filter-menu {
             width: 100%;
         }
     }

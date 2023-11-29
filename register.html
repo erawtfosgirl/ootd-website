@@ -173,15 +173,21 @@
             <div class="container">
                 <div class="row d-flex justify-content-center">
 
-                    <h1>Welcome back</h1>
+                    <h1>Create an Account</h1>
                     <p class="headertxt">
-                        Please enter your detail and find your look
+                        Register for faster checkout, track your order's status, and more
                     </p>
                     <form method="post" action="" class="col-lg-6 col-12">
-                        <label for="emaillogin">Email</label>
+                        <label for="firtname">First Name</label>
+                        <input id="firstname" class="textinp col-12 col-lg-12" required type="text"
+                            placeholder="Enter your email address">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" class="textinp col-12 col-lg-12" required type="text"
+                            placeholder="Enter your email address">
+                        <label for="emaillogin">Email <span>*</span></label>
                         <input id="emaillogin" class="textinp col-12 col-lg-12" required type="text"
                             placeholder="Enter your email address">
-                        <label for="password">Password</label>
+                        <label for="password">Password <span>*</span></label>
                         <div class="passwordbox col-12 col-lg-12">
                             <input placeholder="Enter your password" id="password" class="textinp col-12 col-lg-12"
                                 required type="password">
@@ -209,21 +215,11 @@
                             </svg>
 
                         </div>
-                        <div class="col-lg-12 col-12 d-flex justify-content-between">
-                            <div class="col-lg-6 col-6 remembermebox">
-                                <input type="checkbox" id="rememberme">
-                                <label for="rememberme">Remember me</label>
-                            </div>
-                            <div class="col-lg-6 col-6 text-end">
-                                <a href="#" class="forgotpassword">
-                                    Forgot your password?
-                                </a>
-                            </div>
-                        </div>
-                        <button type="submit" class="btnform col-lg-12 col-12">SIGN IN</button>
+                      
+                        <button type="submit" class="btnform col-lg-12 col-12">Register</button>
 
-                        <div class="col-lg-12 col-12 bottom text-center">Don't have account yet ? <a
-                                href="register.html" class="here">Register here</a></div>
+                        <div class="col-lg-12 col-12 bottom text-center">Already have an account?<a
+                                href="login.html" class="here"> Sign in here</a></div>
 
                     </form>
                 </div>

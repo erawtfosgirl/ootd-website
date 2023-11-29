@@ -375,30 +375,34 @@ body {
   color: #949494;
 }
 
-.login-section .headertxt {
+.loginregister-section h1 {
+  text-transform: capitalize;
+}
+.loginregister-section .headertxt {
   color: gray;
   font-size: 16px;
   font-weight: 400;
 }
-.login-section form label {
+.loginregister-section form label {
   font-weight: 600;
 }
-.login-section form input {
+.loginregister-section form input {
   font-weight: 400;
   font-size: 16px;
 }
-.login-section form button {
+.loginregister-section form button {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.login-section form .forgotpassword {
+.loginregister-section form .forgotpassword {
   color: black;
 }
-.login-section form .bottom {
+.loginregister-section form .bottom {
   color: gray;
 }
-.login-section form .registerhere {
+.loginregister-section form .here {
   text-decoration: underline;
 }
 
@@ -1422,47 +1426,50 @@ body {
     width: 100%;
   }
 }
-.login-section {
+.loginregister-section {
   padding: 7rem 0;
 }
-.login-section h1,
-.login-section p {
+.loginregister-section h1,
+.loginregister-section p {
   text-align: center;
 }
-.login-section form {
+.loginregister-section form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 15px;
 }
-.login-section form .passwordbox {
+.loginregister-section form label span {
+  color: red;
+}
+.loginregister-section form .passwordbox {
   position: relative;
 }
-.login-section form .passwordbox .eyeicon {
+.loginregister-section form .passwordbox .eyeicon {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
 }
-.login-section form .passwordbox .open {
+.loginregister-section form .passwordbox .open {
   display: none;
 }
-.login-section form .passwordbox .closed {
+.loginregister-section form .passwordbox .closed {
   display: block;
 }
-.login-section form .remembermebox input {
+.loginregister-section form .remembermebox input {
   margin-right: 5px;
   accent-color: black;
 }
-.login-section form .textinp {
+.loginregister-section form .textinp {
   border: 1px solid black;
   outline: none;
   border-radius: 5px;
   padding: 10px;
 }
-.login-section form .loginbtn {
+.loginregister-section form .btnform {
   margin-top: 20px;
   background-color: black;
   text-align: center;

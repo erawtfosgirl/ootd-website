@@ -349,7 +349,10 @@ body {
         }
     }
 }
-.login-section {
+.loginregister-section {
+    h1{
+        text-transform: capitalize;
+    }
     .headertxt {
         color: gray;
         font-size: 16px;
@@ -367,6 +370,7 @@ body {
             font-weight: 400;
             font-size: 16px;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         .forgotpassword{
             color: black;
@@ -374,7 +378,7 @@ body {
         .bottom{
             color: gray;
         }
-        .registerhere{
+        .here{
             text-decoration: underline;
         }
 

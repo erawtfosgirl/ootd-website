@@ -1,4 +1,4 @@
-.login-section {
+.loginregister-section {
     padding: 7rem 0;
 
     h1,
@@ -11,6 +11,12 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 15px;
+
+        label{
+            span{
+                color: red;
+            }
+        }
 
         .passwordbox{
             position: relative;
@@ -42,7 +48,7 @@
             border-radius: 5px;
             padding: 10px;
         }
-        .loginbtn {
+        .btnform {
             margin-top: 20px;
             background-color: black;
             text-align: center;

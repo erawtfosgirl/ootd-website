@@ -211,7 +211,7 @@ body {
 .search-area input {
   font-weight: 400;
   font-size: 25px;
-  color: #000000;
+  color: white;
   text-transform: capitalize;
 }
 .search-area input::-moz-placeholder {
@@ -434,17 +434,17 @@ body {
   .information-section h1 {
     font-size: 56px;
   }
-  .search-section input {
+  .search-area input {
     font-size: 16px;
   }
-  .search-section .title h5 {
+  .search-area .title h5 {
     font-size: 16px;
   }
-  .search-section .search-item .product-details .product-name a {
-    font-size: 18px;
-  }
-  .search-section .search-item .product-details .product-price {
+  .search-area .search-item .product-details .product-name a {
     font-size: 16px;
+  }
+  .search-area .search-item .product-details .product-price {
+    font-size: 14px;
   }
   .about .section-title {
     font-size: 18px;
@@ -871,27 +871,31 @@ body {
 }
 .search-area {
   position: fixed;
-  top: -100%;
+  top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 9;
   padding: 20px 0;
   transition: 0.5s ease-in-out;
+  display: none;
 }
-.search-area .exit-search img {
+.search-area .exit-search {
   cursor: pointer;
 }
+.search-area .exit-search svg path {
+  stroke: white;
+}
 .search-area .search-bar {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 .search-area .search-bar svg {
   width: 30;
   height: 30;
 }
 .search-area .search-bar svg path {
-  stroke: black;
+  stroke: white;
 }
 .search-area .search-bar input {
   width: 100%;
@@ -910,10 +914,9 @@ body {
   cursor: pointer;
 }
 .search-area .search-products {
-  height: 60vh;
+  max-height: 60vh;
   background-color: white;
-  overflow-y: scroll;
-  border: 1px solid #d9d9d9;
+  overflow-y: auto;
 }
 .search-area .search-products .title {
   padding: 10px;
@@ -924,7 +927,7 @@ body {
 }
 
 .active-search-area {
-  top: 0;
+  display: block;
 }
 
 .collection-section a {

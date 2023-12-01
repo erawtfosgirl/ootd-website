@@ -172,7 +172,7 @@ body {
     input {
         font-weight: 400;
         font-size: 25px;
-        color: $black;
+        color: white;
         text-transform: capitalize;
         &::placeholder {
             color: $gray;
@@ -350,7 +350,7 @@ body {
     }
 }
 .loginregister-section {
-    h1{
+    h1 {
         text-transform: capitalize;
     }
     .headertxt {
@@ -372,16 +372,15 @@ body {
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-        .forgotpassword{
+        .forgotpassword {
             color: black;
         }
-        .bottom{
+        .bottom {
             color: gray;
         }
-        .here{
+        .here {
             text-decoration: underline;
         }
-
     }
 }
 @media screen and (max-width: 992px) {
@@ -428,7 +427,7 @@ body {
             font-size: 56px;
         }
     }
-    .search-section {
+    .search-area {
         input {
             font-size: 16px;
         }
@@ -440,10 +439,10 @@ body {
         .search-item {
             .product-details {
                 .product-name a {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 .product-price {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }

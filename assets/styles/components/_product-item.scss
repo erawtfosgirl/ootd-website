@@ -38,7 +38,7 @@
             i {
                 font-size: 18px;
             }
-            .solid-icon{
+            .solid-icon {
                 color: $red;
             }
             .hidden {
@@ -89,11 +89,28 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
     .product-item {
-        .action-box {
-            opacity: 1;
-            visibility: visible;
+        .product-image {
+            .discount-box {
+                padding: 3px 8px;
+                font-size: 10px;
+            }
+            .addtocart {
+                opacity: 1;
+                visibility: visible;
+                font-size: 10px;
+            }
+            .action-box {
+                opacity: 1;
+                visibility: visible;
+                width: 28px;
+                height: 28px;
+                i {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

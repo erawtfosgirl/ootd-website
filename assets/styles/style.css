@@ -624,10 +624,24 @@ body {
   visibility: visible;
 }
 
-@media screen and (max-width: 768px) {
-  .product-item .action-box {
+@media screen and (max-width: 1024px) {
+  .product-item .product-image .discount-box {
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+  .product-item .product-image .addtocart {
     opacity: 1;
     visibility: visible;
+    font-size: 10px;
+  }
+  .product-item .product-image .action-box {
+    opacity: 1;
+    visibility: visible;
+    width: 28px;
+    height: 28px;
+  }
+  .product-item .product-image .action-box i {
+    font-size: 14px;
   }
 }
 .category-item {
@@ -1433,7 +1447,7 @@ body {
     width: 50%;
   }
   .shop-products-section .filter-menu {
-    width: 100%;
+    width: 70%;
   }
 }
 .loginregister-section {

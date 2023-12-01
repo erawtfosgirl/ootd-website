@@ -5,7 +5,7 @@ let header = document.querySelector(".site-header");
 
 
 // Check the URL and change header color accordingly
-if (currentPageURL.includes('index') ) {
+if (currentPageURL.includes('index')) {
     window.addEventListener("scroll", () => {
         const currentScroll = window.scrollY;
         if (currentScroll > 250) {
@@ -89,16 +89,19 @@ questions.forEach(question => {
 
 /*Filter Shop Menu*/
 
-let shopfilterbtn=document.querySelector('.shopfilter-btn');
-let closefiltermenu=document.querySelector('.closefiltermenu');
-let filtermenu=document.querySelector('.filter-menu');
-let body=document.querySelector('body')
+let shopfilterbtn = document.querySelector('.shopfilter-btn');
+let closefiltermenu = document.querySelector('.closefiltermenu');
+let filtermenu = document.querySelector('.filter-menu');
+let overlay = document.querySelector('.overlay');
+let body = document.querySelector('body');
 
-shopfilterbtn.addEventListener('click',()=>{
+shopfilterbtn.addEventListener('click', () => {
     filtermenu.classList.add('active');
+    overlay.style.display = 'block';
 })
-closefiltermenu.addEventListener('click',()=>{
+closefiltermenu.addEventListener('click', () => {
     filtermenu.classList.remove('active');
+    overlay.style.display = 'none';
 })
 
 /*Price Range*/

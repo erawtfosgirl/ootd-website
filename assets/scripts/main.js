@@ -163,6 +163,7 @@ imgBtns.forEach((imgItem) => {
 
 function slideImage() {
     const displayHeight = document.querySelector('.img-showcase img:first-child').clientHeight;
+    console.log(displayHeight);
 
     document.querySelector('.img-showcase').style.transform = `translateY(${- (imgId - 1) * displayHeight}px)`;
 }

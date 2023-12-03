@@ -1538,7 +1538,7 @@ body {
 }
 
 .details-section {
-  padding: 7rem 0;
+  padding: 7rem 0 3rem;
 }
 .details-section .product-main-images .img-display {
   overflow: hidden;

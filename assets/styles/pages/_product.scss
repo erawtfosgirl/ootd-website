@@ -1,7 +1,7 @@
 @use "../utils/variables" as *;
 
 .details-section {
-    padding: 7rem 0;
+    padding: 7rem 0 3rem;
     .product-main-images {
         .img-display {
             overflow: hidden;
@@ -132,6 +132,7 @@
         }
     }
 }
+
 @media screen and (max-width: 992px) {
     .details-section {
         padding: 6rem 0;
@@ -146,7 +147,7 @@
                 }
             }
         }
-        .product-info-main{
+        .product-info-main {
             padding-top: 30px;
         }
     }

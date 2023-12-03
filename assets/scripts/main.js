@@ -162,9 +162,9 @@ imgBtns.forEach((imgItem) => {
 });
 
 function slideImage() {
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientHeight;
+    const displayHeight = document.querySelector('.img-showcase img:first-child').clientHeight;
 
-    document.querySelector('.img-showcase').style.transform = `translateY(${- (imgId - 1) * displayWidth}px)`;
+    document.querySelector('.img-showcase').style.transform = `translateY(${- (imgId - 1) * displayHeight}px)`;
 }
 
 window.addEventListener('resize', slideImage);

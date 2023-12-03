@@ -1538,26 +1538,41 @@ body {
 }
 
 .details-section {
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 .details-section .product-main-images .img-display {
   overflow: hidden;
 }
 .details-section .product-main-images .img-showcase {
   display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 85vh;
   transition: all 0.5s ease;
+}
+.details-section .product-main-images .img-showcase img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .details-section .product-main-images .img-select {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  height: 85vh;
+}
+.details-section .product-main-images .img-select .img-item {
+  height: 20vh;
+}
+.details-section .product-main-images .img-select .img-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .details-section .product-main-images .img-item:hover {
   opacity: 0.8;
-}
-.details-section .product-info-main {
-  padding-left: 20px;
 }
 .details-section .product-info-main .product-add-form {
   border-top: 1px solid #d9d9d9;
@@ -1612,7 +1627,6 @@ body {
   font-size: 14px;
 }
 .details-section .product-info-main .product-options .product-quantity input {
-  width: 50%;
   background-color: transparent;
   text-align: center;
   outline: none;
@@ -1643,5 +1657,37 @@ body {
   display: none;
 }
 .details-section .product-info-main .bottom {
-  padding: 30px 0;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .details-section {
+    padding: 6rem 0;
+  }
+  .details-section .product-main-images .img-showcase {
+    height: 70vh;
+  }
+  .details-section .product-main-images .img-select {
+    height: 70vh;
+  }
+  .details-section .product-main-images .img-select .img-item {
+    height: 17vh;
+  }
+  .details-section .product-info-main {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .details-section {
+    padding: 5rem 0;
+  }
+  .details-section .product-main-images .img-showcase {
+    height: 50vh;
+  }
+  .details-section .product-main-images .img-select {
+    height: 50vh;
+  }
+  .details-section .product-main-images .img-select .img-item {
+    height: 11vh;
+  }
 }/*# sourceMappingURL=style.css.map */

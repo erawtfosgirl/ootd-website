@@ -1,16 +1,35 @@
 @use "../utils/variables" as *;
 
 .details-section {
-    padding: 7rem 0;
+    padding: 5rem 0;
+    .product-main-images {
+        .img-display {
+            overflow: hidden;
+        }
+        .img-showcase {
+            display: flex;
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+        .img-select {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .img-item:hover {
+            opacity: 0.8;
+        }
+    }
     .product-info-main {
-        .product-add-form{
+        padding-left: 20px;
+        .product-add-form {
             border-top: 1px solid $gray;
             border-bottom: 1px solid $gray;
             padding: 30px 0;
         }
         .product-info-colors {
             .colorlabel {
-                height:25px;
+                height: 25px;
                 width: 25px;
                 cursor: pointer;
                 border: 0.3px solid white;
@@ -42,10 +61,9 @@
                     display: none;
                 }
             }
-            .selected{
+            .selected {
                 background-color: $gray;
             }
-
         }
         .product-options {
             .product-quantity {
@@ -95,7 +113,7 @@
                 }
             }
         }
-        .bottom{
+        .bottom {
             padding: 30px 0;
         }
     }

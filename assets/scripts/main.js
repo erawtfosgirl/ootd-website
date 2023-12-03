@@ -89,19 +89,19 @@ questions.forEach(question => {
 
 /*Filter Shop Menu*/
 
-let shopfilterbtn = document.querySelector('.shopfilter-btn');
-let closefiltermenu = document.querySelector('.closefiltermenu');
-let filtermenu = document.querySelector('.filter-menu');
-let overlay = document.querySelector('.overlay');
+// let shopfilterbtn = document.querySelector('.shopfilter-btn');
+// let closefiltermenu = document.querySelector('.closefiltermenu');
+// let filtermenu = document.querySelector('.filter-menu');
+// let overlay = document.querySelector('.overlay');
 
-shopfilterbtn.addEventListener('click', () => {
-    filtermenu.classList.add('active');
-    overlay.style.display = 'block';
-})
-closefiltermenu.addEventListener('click', () => {
-    filtermenu.classList.remove('active');
-    overlay.style.display = 'none';
-})
+// shopfilterbtn.addEventListener('click', () => {
+//     filtermenu.classList.add('active');
+//     overlay.style.display = 'block';
+// })
+// closefiltermenu.addEventListener('click', () => {
+//     filtermenu.classList.remove('active');
+//     overlay.style.display = 'none';
+// })
 
 /*Price Range*/
 
@@ -146,4 +146,26 @@ rangeInput.forEach((input) => {
         }
     });
 });
+
+
+
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage() {
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
 

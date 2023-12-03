@@ -171,80 +171,40 @@
         <section class="details-section m-5 ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                            class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    <div class="col-lg-5 product-main-images d-flex align-items-start gap-2">
+
+                            <div class="img-select col-lg-2">
+                                <div class="img-item col-12">
+                                    <a href="#" data-id="1">
+                                        <img class="img-fluid" src="assets/images/products/dress1_1.jpg" alt="Image">
+                                    </a>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                <div class="img-item col-12">
+                                    <a href="#" data-id="2">
+                                        <img class="img-fluid" src="assets/images/products/dress1_2.jpg" alt="Image">
+                                    </a>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                <div class="img-item col-12">
+                                    <a href="#" data-id="3">
+                                        <img class="img-fluid" src="assets/images/products/dress1_3.jpg" alt="Image">
+                                    </a>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                <div class="img-item col-12">
+                                    <a href="#" data-id="4">
+                                        <img class="img-fluid" src="assets/images/products/dress1_4.jpg" alt="Image">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                        <div thumbsSlider="" class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            <div class="img-display col-lg-10">
+                                <div class="img-showcase col-lg-12">
+                                    <img class="img-fluid" src="assets/images/products/dress1_1.jpg" alt="Image">
+                                    <img class="img-fluid" src="assets/images/products/dress1_2.jpg" alt="Image">
+                                    <img class="img-fluid" src="assets/images/products/dress1_3.jpg" alt="Image">
+                                    <img class="img-fluid" src="assets/images/products/dress1_4.jpg" alt="Image">
                                 </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="col-lg-6 product-info-main">
+                    <div class="col-lg-7 product-info-main">
                         <div class="top">
                             <h2 class="product-name">Shoulder bag with flap</h2>
                             <p class="product-info-price">70$</p>
@@ -321,6 +281,7 @@
 
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
@@ -439,29 +400,7 @@
                 clickable: true
             },
         });
-
-
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-        });
     </script>
-
-
-
-
     <script>
         $(".owl-carousel").owlCarousel({
             loop: true,

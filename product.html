@@ -32,7 +32,7 @@
     <header class="site-header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 header-logo">
+                <div class="col-xl-1 col-lg-1 col-1 header-logo">
                     <a href="index.html">
                         <img src="assets/icons/logo.svg" alt="Logo">
                     </a>
@@ -56,33 +56,25 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11 header-actions">
-                    <div class="search col-xl-5 col-lg-5 col-md-5 col-6">
+                <div class="col-xl-5 col-lg-5 col-md-11 col-11 header-actions">
+                    <div class="search col-xl-5 col-md-5 col-6">
                         <button class="d-flex align-items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                fill="none">
-                                <path
-                                    d="M11.5 21.5C16.7467 21.5 21 17.2467 21 12C21 6.75329 16.7467 2.5 11.5 2.5C6.25329 2.5 2 6.75329 2 12C2 17.2467 6.25329 21.5 11.5 21.5Z"
-                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M22 22.5L20 20.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
+                            <img src="assets/icons/search.svg" alt="Search Icon">
                             Search
                         </button>
                     </div>
                     <div class="wishlist">
-                        <a href="wishlist.html">
+                        <a href="#wishlist">
                             <img src="assets/icons/wishlist.svg" alt="Wishlist Icon">
                         </a>
                     </div>
                     <div class="cart">
-                        <a href="cart.html">
+                        <a href="#cart">
                             <img src="assets/icons/cart.svg" alt="Cart Icon">
                         </a>
                     </div>
                     <div class="user">
-                        <a href="login.html">
+                        <a href="#login">
                             <img src="assets/icons/user.svg" alt="Cart Icon">
                         </a>
                     </div>
@@ -112,15 +104,9 @@
     <div class="search-area">
         <div class="container">
             <div class="exit-search text-end">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" fill="none">
-                    <path d="M6.66797 6.66699L25.3334 25.3324" stroke="#101010" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M6.66711 25.3324L25.3325 6.66699" stroke="#101010" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-
+                <img src="assets/icons/reset.svg" alt="Icon">
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-9 col-10 search-bar mt-5 d-flex align-items-center gap-3 m-auto">
+            <div class="col-xl-6 col-md-9 col-9 search-bar mt-5 d-flex align-items-center gap-3 m-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                     <path
                         d="M11.5 21.5C16.7467 21.5 21 17.2467 21 12C21 6.75329 16.7467 2.5 11.5 2.5C6.25329 2.5 2 6.75329 2 12C2 17.2467 6.25329 21.5 11.5 21.5Z"
@@ -130,7 +116,7 @@
                 </svg>
                 <input type="search" placeholder="What are you looking for ?">
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-9 col-10 mt-5 search-products m-auto">
+            <div class="col-xl-6 col-md-9 col-9 mt-5 search-products m-auto">
                 <div class="title d-flex justify-content-between align-items-center">
                     <h5>Products</h5>
                     <a href="#shop">See all (17)</a>
@@ -182,214 +168,159 @@
     </div>
 
     <main>
-
-        <section class="slider-section swiper bannerSwiper">
-            <div class="slider-wrapper swiper-wrapper">
-                <div class="slider-item swiper-slide">
-                    <img class="d-block h-100 w-100 object-fit-cover" src="assets/images/3597100832_9_1_1.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>NEW IN</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item swiper-slide">
-                    <img class="h-100 w-100 object-fit-cover"
-                        src="assets/images/IMAGE-landscape-fill-8cae5d8e-4358-4149-9e4c-38b89b6c01e3-default_0.jpg"
-                        alt="Image">
-                    <div class="slider-content text-center">
-                        <h1>JEANS</h1>
-                        <div class="shop-btn">
-                            <a href="#shop">SHOP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next banner-next banner-btn"></div>
-            <div class="swiper-button-prev banner-prev banner-btn"></div>
-            <div class="swiper-pagination"></div>
-        </section>
-
-        <section class="categories-section mt-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">Shop by categories</h2>
-                <div class="owl-carousel owl-theme">
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1165192303_1_1_1.jpg" alt="Image">
-                            <h3>Skirts</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/1856349303_1_1_1.jpg" alt="Image">
-                            <h3>Accessories</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8917873033_2_1_1.jpg" alt="Image">
-                            <h3>Blazer</h3>
-                        </a>
-                    </div>
-                    <div class="category-item">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/3009210303_2_1_1.jpg" alt="Image">
-                            <h3>Shoes</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/images/categories/8820321800_2_1_1.jpg" alt="Image">
-                            <h3>Dress</h3>
-                        </a>
-                    </div>
-                    <div class="category-item swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            <h3>Bags</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="products-section mt-5">
-            <div class="container">
-                <div class="title mb-4 text-center">
-                    <h2>Trending</h2>
-                    <div class="txt">Top view in this week</div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 product-item">
-                        <div class="product-image">
-                            <a href="product.html">
-                                <img class="img-fluid" src="assets/images/categories/6011210814_2_1_1.jpg" alt="Image">
-                            </a>
-                            <button class="wishlist action-box">
-                                <i class="fa-regular fa-heart regular-icon"></i>
-                                <i class="fa-solid fa-heart hidden solid-icon"></i>
-                            </button>
-                            <span class="discount-box">-20%</span>
-                            <button type="button" class="col-xl-7 col-lg-7 col-md-7 col-7 addtocart">Add to
-                                cart</button>
-                        </div>
-                        <div class="product-details mt-2">
-                            <h5 class="product-name"><a href="#">Shoulder bag with flap</a></h5>
-                            <div class="product-price d-flex align-items-center justify-content-center gap-2">
-                                <div class="price-regular">55 $</div>
-                                <div class="price-old"><del> 70 $</del></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="collection-section mt-5">
+        <section class="details-section m-5 ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <img class="img-fluid" src="assets/images/7950939625_9_1_1.jpg" alt="Image">
+                    <div class="col-lg-6">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-12 p-3 collection-content">
-                        <h1>Extra 10% off on summer collection</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Recusandae commodi tempora, aut omnis maiores rem numquam id perferendis delectus
-                            quos, deleniti temporibus saepe animi facilis incidunt, non doloremque esse soluta!
-                        </p>
-                        <a href="#shop">Shop Now</a>
+                    <div class="col-lg-6 product-info-main">
+                        <div class="top">
+                            <h2 class="product-name">Shoulder bag with flap</h2>
+                            <p class="product-info-price">70$</p>
+                        </div>
+
+                        <div class="product-add-form">
+                            <form action="" class="d-flex flex-column gap-3">
+
+                                <div class="product-info-colors d-flex align-items-center gap-2">
+                                    <span class="txt">Color :</span>
+
+                                    <label class="colorlabel" style="background-color: #9bab37">
+                                        <input type="radio" name="color" value="#9BAB37">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon markicon"
+                                            viewBox="0 0 512 512">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96" />
+                                        </svg>
+                                    </label>
+                                    <label class="colorlabel" style="background-color: #edc321">
+                                        <input type="radio" name="color" value="#edc321">
+                                    </label>
+                                    <label class="colorlabel" style="background-color: #3780ab">
+                                        <input type="radio" name="color" value="#3780ab">
+                                    </label>
+                                </div>
+                                <div class="product-info-sizes d-flex align-items-center gap-2">
+                                    <span class="txt">Sizes :</span>
+
+                                    <label class="sizelabel selected">
+                                        <input type="radio" name="color" value="S">
+                                        XS
+                                    </label>
+                                    <label class="sizelabel">
+                                        <input type="radio" name="color" value="S">
+                                        S
+                                    </label>
+                                    <label class="sizelabel">
+                                        <input type="radio" name="color" value="S">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="product-options d-flex align-items-center gap-3">
+                                    <div class="product-quantity col-lg-2 col-md-2 col-sm-3 col-5">
+                                        <button class="decrease">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <input type="text" value="1" />
+                                        <button class="increase">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="col-xl-3 col-lg-7 col-md-7 col-7 addtocart">Add to
+                                        cart</button>
+                                    <button class="wishlist action-box">
+                                        <i class="fa-regular fa-heart regular-icon"></i>
+                                        <i class="fa-solid fa-heart hidden solid-icon"></i>
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="bottom">
+                            <h6>Description</h6>
+                            <p class="description">Sweet and Lovely knitted sweater with turtleneck and long sleeves,
+                                ready to be your best
+                                friend during changing weather. Soft colors selection will easy to mix-n-match with your
+                                wardrobe.</p>
+                            <h6>Material</h6>
+                            <p class="material">Cotton Knit Fabric
+                                The best cotton, smooth, comfortable, absorb sweat and not shiny</p>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="information-section mt-5">
-            <div class="container">
-                <div class="content text-center">
-                    <p>JUST LAUNCHED</p>
-                    <h1>FREE EXPRESS SHIPPING</h1>
-                    <a href="#shop">Shop Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="newsletter-section mt-5">
-            <div class="container h-100">
-                <form
-                    class="d-flex flex-column h-100 justify-content-center align-items-center gap-4 text-center newsletter-content">
-                    <h1 class="title">THE MOST OOTD OF THE SEASON IT’S IN OUR NEWSLETTER!</h1>
-                    <div class="subtitle">SUBSCRIBE TO OUR NEWSLETTER</div>
-                    <input type="email" placeholder="E-mail" required>
-                    <button type="button">I'M IN</button>
-                </form>
             </div>
         </section>
     </main>
@@ -508,7 +439,29 @@
                 clickable: true
             },
         });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
     </script>
+
+
+
+
     <script>
         $(".owl-carousel").owlCarousel({
             loop: true,

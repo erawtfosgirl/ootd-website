@@ -8,14 +8,14 @@ body {
     font-weight: 300;
     a {
         color: $white;
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
     .search {
         button {
             color: $white;
-            font-size: 14px;
+            font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 3px;
         }
@@ -380,6 +380,38 @@ body {
         }
         .here {
             text-decoration: underline;
+        }
+    }
+}
+.details-section{
+    .top{
+        .product-info-price{
+            font-weight: 400;
+            font-size: 18px;
+            color: $dark-gray;
+        }
+    }
+    .product-add-form{
+        .txt{
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .sizelabel{
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .addtocart {
+            font-weight: 300;
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+    .bottom{
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            color: $dark-gray;
         }
     }
 }

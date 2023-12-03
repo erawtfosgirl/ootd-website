@@ -93,7 +93,6 @@ let shopfilterbtn = document.querySelector('.shopfilter-btn');
 let closefiltermenu = document.querySelector('.closefiltermenu');
 let filtermenu = document.querySelector('.filter-menu');
 let overlay = document.querySelector('.overlay');
-let body = document.querySelector('body');
 
 shopfilterbtn.addEventListener('click', () => {
     filtermenu.classList.add('active');

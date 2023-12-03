@@ -1,0 +1,102 @@
+@use "../utils/variables" as *;
+
+.details-section {
+    padding: 7rem 0;
+    .product-info-main {
+        .product-add-form{
+            border-top: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            padding: 30px 0;
+        }
+        .product-info-colors {
+            .colorlabel {
+                height:25px;
+                width: 25px;
+                cursor: pointer;
+                border: 0.3px solid white;
+                outline: 0.3px solid $gray;
+                position: relative;
+                border-radius: 5px;
+
+                input {
+                    display: none;
+                }
+                .markicon {
+                    position: absolute;
+                }
+            }
+        }
+        .product-info-sizes {
+            .sizelabel {
+                height: 30px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 1px solid $gray;
+                position: relative;
+
+                input {
+                    display: none;
+                }
+            }
+            .selected{
+                background-color: $gray;
+            }
+
+        }
+        .product-options {
+            .product-quantity {
+                border: 1px solid $gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 10px;
+                button {
+                    border: 0;
+                    background-color: transparent;
+                    i {
+                        font-size: 14px;
+                    }
+                }
+                input {
+                    width: 50%;
+                    background-color: transparent;
+                    text-align: center;
+                    outline: none;
+                    border: none;
+                    pointer-events: none;
+                }
+            }
+            .addtocart {
+                background-color: $footer-bg;
+                padding: 7px 15px;
+                border: none;
+                border-radius: 5px;
+                color: white;
+            }
+            .action-box {
+                padding: 5px 10px;
+                background-color: white;
+                border: 1px solid $gray;
+                border-radius: 5px;
+                transition: 0.3s ease-in-out;
+                i {
+                    font-size: 18px;
+                }
+                .solid-icon {
+                    color: $red;
+                }
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+        .bottom{
+            padding: 30px 0;
+        }
+    }
+}

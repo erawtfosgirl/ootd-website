@@ -1660,6 +1660,12 @@ body {
   padding-top: 30px;
 }
 
+.review-section .review-item {
+  border: 1px solid red;
+  height: 400px;
+  padding: 20px;
+}
+
 @media screen and (max-width: 992px) {
   .details-section {
     padding: 6rem 0;

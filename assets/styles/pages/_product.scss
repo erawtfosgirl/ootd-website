@@ -133,18 +133,14 @@
     }
 }
 .review-section {
-
     .main-item {
-        background-color: rgb(42, 42, 42);
-        height: 450px;
         overflow: hidden;
-        border-radius: 8px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-right: 20px;
         .content {
-            height: 90%;
+            background-color: rgb(42, 42, 42);
+            border-radius: 8px;
+            padding: 20px;
+            height: 450px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -155,28 +151,22 @@
             }
         }
     }
-   
-    .review-item {
-        background-color: #fafafa;
-        height: 450px;
-        overflow: hidden;
-        border-radius: 8px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
+    .review-item {
         .content {
-            height: 90%;
+            background-color: #fafafa;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 8px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .bottom{
+            .bottom {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
-           
         }
     }
 }
@@ -198,6 +188,19 @@
             padding-top: 30px;
         }
     }
+    .review-section {
+        .main-item {
+            .content {
+                height: 350px;
+            }
+        }
+
+        .review-item {
+            .content {
+                height: 350px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .details-section {
@@ -211,6 +214,19 @@
                 .img-item {
                     height: 11vh;
                 }
+            }
+        }
+    }
+    .review-section {
+        .main-item {
+            .content {
+                height: 300px;
+            }
+        }
+
+        .review-item {
+            .content {
+                height: 300px;
             }
         }
     }

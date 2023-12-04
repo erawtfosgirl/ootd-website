@@ -301,8 +301,8 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
-                        <div class="row mt-4">
-                            <div class="col-lg-3  main-item">
+                        <div class="d-flex  mt-4">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6 main-item">
                                 <div class="content">
                                     <div class="top">
                                         <h4>Shoulder bag with flap</h4>
@@ -324,9 +324,9 @@
                                 </div>
 
                             </div>
-                            <div class="col-lg-9 swiper mySwiper">
+                            <div class="col-lg-9 col-md-8 col-sm-8 col-6 swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="col-lg-4 swiper-slide review-item">
+                                    <div class="swiper-slide review-item">
                                         <div class="content">
                                             <div class="top">
                                                 <h4 class="review-title">Love the Sweater</h4>
@@ -344,7 +344,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 swiper-slide review-item">
+                                    <div class="swiper-slide review-item">
                                         <div class="content">
                                             <div class="top">
                                                 <h4 class="review-title">Love the Sweater</h4>
@@ -362,7 +362,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 swiper-slide review-item">
+                                    <div class="swiper-slide review-item">
                                         <div class="content">
                                             <div class="top">
                                                 <h4 class="review-title">Love the Sweater</h4>
@@ -380,7 +380,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 swiper-slide review-item">
+                                    <div class="swiper-slide review-item">
                                         <div class="content">
                                             <div class="top">
                                                 <h4 class="review-title">Love the Sweater</h4>
@@ -621,13 +621,24 @@
             },
         });
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 20,
             freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
             },
+
         });
     </script>
     <script>

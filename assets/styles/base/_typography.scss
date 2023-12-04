@@ -420,49 +420,56 @@ body {
 .review-section {
     .main-item {
         color: white;
-        .content{
+        .content {
             text-align: center;
         }
-        .middle{
-            .review-score{
+        .middle {
+            .review-score {
                 font-size: 40px;
                 font-weight: 500;
             }
-            .reviewtxt{
+            .reviewtxt {
                 font-weight: 400;
                 font-size: 16px;
             }
         }
-        .bottom{
-            .soldtxt{
+        .bottom {
+            .soldtxt {
                 font-weight: 300;
                 font-size: 16px;
                 color: gray;
-                .sold-count{
+                .sold-count {
                     color: white;
                     font-weight: 400;
                 }
             }
-            .reviewbtn{
+            .reviewbtn {
                 font-weight: 400;
                 font-size: 16px;
             }
         }
     }
-    .review-item{
-        .top{
-           .review-desc{
-            font-weight: 400;
-            font-size: 16px;
-            color: grey;
-           }
+    .review-item {
+        .top {
+            .review-title {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .review-desc {
+                font-weight: 400;
+                font-size: 16px;
+                color: grey;
+                text-align: justify;
+            }
         }
-       .bottom{
-        .username{
-            font-weight: 500;
-            font-size: 16px;
+        .bottom {
+            .username {
+                font-weight: 600;
+                font-size: 16px;
+            }
         }
-       }
     }
 }
 @media screen and (max-width: 992px) {
@@ -543,6 +550,53 @@ body {
             line-height: 32px;
         }
     }
+    .review-section {
+        .main-item {
+            .top {
+                h4 {
+                    font-size: 16px;
+                }
+            }
+            .middle {
+                .review-score {
+                    font-size: 30px;
+                }
+                .reviewtxt {
+                    font-size: 14px;
+                }
+            }
+            .bottom {
+                .soldtxt {
+                    font-size: 14px;
+                }
+                .reviewbtn {
+                    font-size: 14px;
+                }
+            }
+        }
+        .review-item {
+            .top {
+                .review-title {
+                    font-size: 16px;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .review-desc {
+                    font-size: 14px;
+                }
+            }
+            .bottom {
+                .username {
+                    font-size: 12px;
+                }
+                .date-review {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .product-item {
@@ -618,6 +672,49 @@ body {
             .top {
                 h5 {
                     font-size: 16px;
+                }
+            }
+        }
+    }
+    .review-section {
+        .main-item {
+            .top {
+                h4 {
+                    font-size: 14px;
+                }
+            }
+            .middle {
+                .review-score {
+                    font-size: 20px;
+                }
+                .reviewtxt {
+                    font-size: 12px;
+                }
+            }
+            .bottom {
+                .soldtxt {
+                    font-size: 12px;
+                }
+                .reviewbtn {
+                    font-size: 12px;
+                }
+            }
+        }
+        .review-item {
+            .top {
+                .review-title {
+                    font-size: 14px;
+                }
+                .review-desc {
+                    font-size: 12px;
+                }
+            }
+            .bottom {
+                .username {
+                    font-size: 12px;
+                }
+                .date-review {
+                    font-size: 12px;
                 }
             }
         }

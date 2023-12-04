@@ -383,20 +383,20 @@ body {
         }
     }
 }
-.details-section{
-    .top{
-        .product-info-price{
+.details-section {
+    .top {
+        .product-info-price {
             font-weight: 400;
             font-size: 18px;
             color: $dark-gray;
         }
     }
-    .product-add-form{
-        .txt{
+    .product-add-form {
+        .txt {
             font-weight: 500;
             font-size: 16px;
         }
-        .sizelabel{
+        .sizelabel {
             font-weight: 400;
             font-size: 14px;
         }
@@ -407,14 +407,62 @@ body {
             text-transform: uppercase;
         }
     }
-    .bottom{
-        p{
+    .bottom {
+        p {
             font-weight: 400;
             font-size: 14px;
             color: $dark-gray;
             text-align: justify;
             width: 100%;
         }
+    }
+}
+.review-section {
+    .main-item {
+        color: white;
+        .content{
+            text-align: center;
+        }
+        .middle{
+            .review-score{
+                font-size: 40px;
+                font-weight: 500;
+            }
+            .reviewtxt{
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        .bottom{
+            .soldtxt{
+                font-weight: 300;
+                font-size: 16px;
+                color: gray;
+                .sold-count{
+                    color: white;
+                    font-weight: 400;
+                }
+            }
+            .reviewbtn{
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+    .review-item{
+        .top{
+           .review-desc{
+            font-weight: 400;
+            font-size: 16px;
+            color: grey;
+           }
+        }
+       .bottom{
+        .username{
+            font-weight: 500;
+            font-size: 16px;
+        }
+       }
     }
 }
 @media screen and (max-width: 992px) {

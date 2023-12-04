@@ -301,14 +301,104 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
-                        <div class="d-flex mt-4 gap-3">
-                            <div class="col-lg-3 review-item">
-                                <h5>Shoulder bag with flap</h5>
-                                <div class="review-score">4.7</div>
+                        <div class="row mt-4">
+                            <div class="col-lg-3  main-item">
+                                <div class="content">
+                                    <div class="top">
+                                        <h4>Shoulder bag with flap</h4>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="review-score">4.7</div>
+                                        <div class="reviewtxt">Overall rating based on
+                                            <span class="review-count">198</span>
+                                            reviews
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="soldtxt">
+                                            <span class="sold-count">398</span>
+                                            products have been sold
+                                        </div>
+                                        <button class="btn btn-light  reviewbtn">Write a review</button>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-lg-3 review-item">
-                                <h5>Shoulder bag with flap</h5>
-                                <div class="review-score">4.7</div>
+                            <div class="col-lg-9 swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="col-lg-4 swiper-slide review-item">
+                                        <div class="content">
+                                            <div class="top">
+                                                <h4 class="review-title">Love the Sweater</h4>
+                                                <p class="review-desc">I really love how it looks, and it is indeed have
+                                                    a
+                                                    good
+                                                    quality fabric. I am ready to create color coordinated look with
+                                                    this
+                                                    sweater</p>
+                                            </div>
+
+                                            <div class="bottom">
+                                                <div class="username">Vefa Ferzeliyeva</div>
+                                                <div class="date-review">11/12/2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 swiper-slide review-item">
+                                        <div class="content">
+                                            <div class="top">
+                                                <h4 class="review-title">Love the Sweater</h4>
+                                                <p class="review-desc">I really love how it looks, and it is indeed have
+                                                    a
+                                                    good
+                                                    quality fabric. I am ready to create color coordinated look with
+                                                    this
+                                                    sweater</p>
+                                            </div>
+
+                                            <div class="bottom">
+                                                <div class="username">Vefa Ferzeliyeva</div>
+                                                <div class="date-review">11/12/2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 swiper-slide review-item">
+                                        <div class="content">
+                                            <div class="top">
+                                                <h4 class="review-title">Love the Sweater</h4>
+                                                <p class="review-desc">I really love how it looks, and it is indeed have
+                                                    a
+                                                    good
+                                                    quality fabric. I am ready to create color coordinated look with
+                                                    this
+                                                    sweater</p>
+                                            </div>
+
+                                            <div class="bottom">
+                                                <div class="username">Vefa Ferzeliyeva</div>
+                                                <div class="date-review">11/12/2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 swiper-slide review-item">
+                                        <div class="content">
+                                            <div class="top">
+                                                <h4 class="review-title">Love the Sweater</h4>
+                                                <p class="review-desc">I really love how it looks, and it is indeed have
+                                                    a
+                                                    good
+                                                    quality fabric. I am ready to create color coordinated look with
+                                                    this
+                                                    sweater</p>
+                                            </div>
+
+                                            <div class="bottom">
+                                                <div class="username">Vefa Ferzeliyeva</div>
+                                                <div class="date-review">11/12/2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -528,6 +618,15 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
+            },
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
     </script>

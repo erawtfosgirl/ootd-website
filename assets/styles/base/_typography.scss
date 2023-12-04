@@ -461,7 +461,6 @@ body {
                 font-weight: 400;
                 font-size: 16px;
                 color: grey;
-                text-align: justify;
             }
         }
         .bottom {
@@ -469,6 +468,22 @@ body {
                 font-weight: 600;
                 font-size: 16px;
             }
+        }
+    }
+    .shipping {
+        ol {
+            li {
+                .shipping-desc {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: gray;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: gray;
         }
     }
 }
@@ -596,6 +611,18 @@ body {
                 }
             }
         }
+        .shipping {
+            ol {
+                li {
+                    .shipping-desc {
+                        font-size: 14px;
+                    }
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -716,6 +743,18 @@ body {
                 .date-review {
                     font-size: 12px;
                 }
+            }
+        }
+        .shipping {
+            ol {
+                li {
+                    .shipping-desc {
+                        font-size: 12px;
+                    }
+                }
+            }
+            p {
+                font-size: 12px;
             }
         }
     }

@@ -470,11 +470,20 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: grey;
-  text-align: justify;
 }
 .review-section .review-item .bottom .username {
   font-weight: 600;
   font-size: 16px;
+}
+.review-section .shipping ol li .shipping-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: gray;
+}
+.review-section .shipping p {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
 }
 
 @media screen and (max-width: 992px) {
@@ -560,6 +569,12 @@ body {
   .review-section .review-item .bottom .date-review {
     font-size: 12px;
   }
+  .review-section .shipping ol li .shipping-desc {
+    font-size: 14px;
+  }
+  .review-section .shipping p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 768px) {
   .product-item .product-details .product-name a {
@@ -638,6 +653,12 @@ body {
     font-size: 12px;
   }
   .review-section .review-item .bottom .date-review {
+    font-size: 12px;
+  }
+  .review-section .shipping ol li .shipping-desc {
+    font-size: 12px;
+  }
+  .review-section .shipping p {
     font-size: 12px;
   }
 }
@@ -1792,6 +1813,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.review-section ol li {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 992px) {
